@@ -1,0 +1,7 @@
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/install/strip.dir
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/edit_cache.dir
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/OpNovice.dir
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/rebuild_cache.dir
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/list_install_components.dir
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/install/local.dir
+/home/sheng/work/geant4/N06/OpNovice/CMakeFiles/install.dir

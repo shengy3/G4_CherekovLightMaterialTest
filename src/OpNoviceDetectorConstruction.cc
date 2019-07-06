@@ -109,38 +109,40 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   G4VPhysicalVolume* expHall_phys
     = new G4PVPlacement(0,G4ThreeVector(),expHall_log,"World",0,false,0);
 
-// The Air Tank
+
+
+// The cladding shell
 //
-  G4Box* airTank = new G4Box("Tank",fTank_x,fTank_y,fTank_z);
 
-  G4LogicalVolume* airTank_log
-    = new G4LogicalVolume(airTank,air,"Tank",0,0,0);
+  G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 2*cm, 45.0*cm, 0*deg, 360*deg);
 
-  G4VPhysicalVolume* airTank_phys
-    = new G4PVPlacement(0,G4ThreeVector(),airTank_log,"Tank",
+  G4LogicalVolume* cladding_log
+    = new G4LogicalVolume(cladding,air,"Cladding",0,0,0);
+
+  G4VPhysicalVolume* cladding_phys
+    = new G4PVPlacement(0,G4ThreeVector(),cladding_log,"Cladding",
                         expHall_log,false,0);
+
 
 // The Quartz Rod
 
-G4Tubs* quartz_rod = new G4Tubs("aTubeSolid", 0*cm, 0.5*cm, 40.0*cm, 0*deg, 360*deg);
-G4LogicalVolume* quartz_rod_log
+  G4Tubs* quartz_rod = new G4Tubs("aTubeSolid", 0*cm, 0.5*cm, 40.0*cm, 0*deg, 360*deg);
+  G4LogicalVolume* quartz_rod_log
     = new G4LogicalVolume(quartz_rod,air,"Rod",0,0,0);
+
+  G4VPhysicalVolume* quartz_rod_phys
+    = new G4PVPlacement(0,G4ThreeVector(),quartz_rod_log,"QuartzRod",
+                        cladding_log,false,0);
+
 //Add visualization color
 
-  G4VisAttributes * ColorOfquartzrod = new G4VisAttributes(G4Colour(1.0,0,0));
-  quartz_rod_log->SetVisAttributes(ColorOfquartzrod);
+  G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(G4Colour(1.0,0,0));
+  cladding_log->SetVisAttributes(ColorOfQuartzRod);
   
-  G4VisAttributes * ColorOfairTank = new G4VisAttributes(G4Colour(0,0,1.0));
-  airTank_log->SetVisAttributes(ColorOfairTank);
+  G4VisAttributes * ColorOfCladding = new G4VisAttributes(G4Colour(0,0,1.0));
+  quartz_rod_log->SetVisAttributes(ColorOfCladding);
   
-  //quartz_rod_log->SetVisAttributes(G4VisAttributes::ForcedDrawingStyle::solid);
-      //G4VisAttributes * ColorOfAlu = new G4VisAttributes(G4Colour(0.5,0.5,0.3));
-
-
-
-//G4VPhysicalVolume* quartz_rod_phys =
-      new G4PVPlacement(0,G4ThreeVector(0,0,0),quartz_rod_log,"Rod",
-                        airTank_log,false,0);
+ 
 
 /*
 //  ------------- Surfaces --------------
