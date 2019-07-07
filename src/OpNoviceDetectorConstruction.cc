@@ -57,7 +57,7 @@ OpNoviceDetectorConstruction::OpNoviceDetectorConstruction()
  : G4VUserDetectorConstruction()
 {
   fExpHall_x = fExpHall_y = fExpHall_z = 100.0*cm;
-  fTank_x    = fTank_y    = fTank_z    =  50.0*cm;
+ 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -139,10 +139,10 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
  
   
   G4VisAttributes * ColorOfCladding = new G4VisAttributes(G4Colour(0,0,1.0));
-  quartz_rod_log->SetVisAttributes(ColorOfCladding);
+  cladding_log->SetVisAttributes(ColorOfCladding);
   
-  //G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(G4Colour(1.0,0,0));
-  //cladding_log->SetVisAttributes(ColorOfQuartzRod);
+  G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(G4Colour(1.0,0,0));
+  quartz_rod_log->SetVisAttributes(ColorOfQuartzRod);
 
 /*
 //  ------------- Surfaces --------------

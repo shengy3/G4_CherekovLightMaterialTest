@@ -250,11 +250,16 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   StainlessSteel = new G4Material(name="StainlessSteel",density,nel=1);
   StainlessSteel->AddElement(elO, fractionmass = 1.);
 
-  //
+  //Water
   density = 1.01*g/cm3;
   Water = new G4Material(name="Water",density,nel=2);
   Water->AddElement(elH, natoms = 2);
   Water->AddElement(elO, natoms = 1);
+  
+  density= 2.32*g/cm3,
+  G4Material* SiO2 = new G4Material("Quartz",density,nel=2);
+  SiO2->AddElement(elSi, natoms=1);
+  SiO2->AddElement(elO , natoms=2);
 
 
 }
@@ -292,6 +297,8 @@ G4Material * FCALMaterialConsultant::Material(G4String what)
   if(what == "MWPCArCO2")         material = MWPCArCO2;
   if(what == "RhoaCell")          material = RhoaCell;
   if(what == "Water")             material = Water;
+  if(what == "Quartz")            material = SiO2;
+
   return material;
 }
 				  

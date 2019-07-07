@@ -67,7 +67,7 @@ private:
   G4Material *Polystyrene, *StainlessSteel, *Nickel, *LiquidArgon;
   G4Material *Kapton, *FCAL1CuArKap, *FCAL1CuAr, *FCAL2CuArKap;
   G4Material *FCAL2WFeNi, *FCAL2WFeNiCuAr, *MWPCArCO2;
-  G4Material *Water;
+  G4Material *Water, *SiO2;
  
 };
 
