@@ -55,9 +55,12 @@ OpNoviceStackingAction::~OpNoviceStackingAction()
 
 G4ClassificationOfNewTrack
 OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
-{
+{ 
+  //test for the definition
+  
+  // particle is optical photon
   if(aTrack->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition())
-  { // particle is optical photon
+  { 
     if(aTrack->GetParentID()>0)
     { // particle is secondary
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
@@ -66,6 +69,38 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
         fCerenkovCounter++;
     }
   }
+  // particle is electron 
+  if(aTrack->GetDefinition() == G4Electron::ElectronDefinition())
+  { 
+    if(aTrack->GetParentID()>0)
+    { // particle is secondary
+    std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+    fElectronCounter++;
+    /*
+      if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
+        fScintillationCounter++;
+      if(aTrack->GetCreatorProcess()->GetProcessName() == "Cerenkov")
+        fCerenkovCounter++;
+    */
+    }
+  }
+
+  // particle is Gamma 
+  if(aTrack->GetDefinition() == G4Gamma::GammaDefinition())
+  { 
+    if(aTrack->GetParentID()>0)
+    { // particle is secondary
+    std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+    fGammaCounter++;
+    /*
+      if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
+        fScintillationCounter++;
+      if(aTrack->GetCreatorProcess()->GetProcessName() == "Cerenkov")
+        fCerenkovCounter++;
+    */
+    }
+  }
+
   return fUrgent;
 }
 
@@ -77,6 +112,10 @@ void OpNoviceStackingAction::NewStage()
          << fScintillationCounter << G4endl;
   G4cout << "Number of Cerenkov photons produced in this event : "
          << fCerenkovCounter << G4endl;
+  G4cout << "Number of Gamma photons produced in this event : "
+         << fGammaCounter << G4endl;
+  G4cout << "Number of electron photons produced in this event : "
+         << fElectronCounter << G4endl;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
