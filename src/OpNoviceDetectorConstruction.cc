@@ -56,7 +56,7 @@
 OpNoviceDetectorConstruction::OpNoviceDetectorConstruction()
  : G4VUserDetectorConstruction()
 {
-  fExpHall_x = fExpHall_y = fExpHall_z = 100.0*cm;
+  fExpHall_x = fExpHall_y = fExpHall_z = 50.0*cm;
  
 }
 
@@ -75,9 +75,12 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   FCALMaterials->GetInstance();
 
 // ------------- Materials -------------
-
-  G4Material* water = FCALMaterials->Material("Water");
+  
   G4Material* air = FCALMaterials->Material("Air");
+  G4Material* quartz = FCALMaterials->Material("Quartz");
+  G4Material* iron = FCALMaterials->Material("Iron");
+
+
  
 
 //
@@ -117,7 +120,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 2*cm, 45.0*cm, 0*deg, 360*deg);
 
   G4LogicalVolume* cladding_log
-    = new G4LogicalVolume(cladding,air,"Cladding",0,0,0);
+    = new G4LogicalVolume(cladding,iron,"Cladding",0,0,0);
 
   G4VPhysicalVolume* cladding_phys
     = new G4PVPlacement(0,G4ThreeVector(),cladding_log,"Cladding",
@@ -128,7 +131,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
   G4Tubs* quartz_rod = new G4Tubs("aTubeSolid", 0*cm, 0.5*cm, 40.0*cm, 0*deg, 360*deg);
   G4LogicalVolume* quartz_rod_log
-    = new G4LogicalVolume(quartz_rod,air,"Rod",0,0,0);
+    = new G4LogicalVolume(quartz_rod,quartz,"Rod",0,0,0);
 
   G4VPhysicalVolume* quartz_rod_phys
     = new G4PVPlacement(0,G4ThreeVector(),quartz_rod_log,"QuartzRod",
@@ -138,10 +141,12 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
  
   
-  G4VisAttributes * ColorOfCladding = new G4VisAttributes(G4Colour(0,0,1.0));
+  G4VisAttributes * ColorOfCladding = new G4VisAttributes(true,G4Colour(0,0,1.0));
+  ColorOfCladding->SetForceSolid(true);
   cladding_log->SetVisAttributes(ColorOfCladding);
   
-  G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(G4Colour(1.0,0,0));
+  G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(true,G4Colour(1.0,0,0));
+  ColorOfQuartzRod->SetForceSolid(true);
   quartz_rod_log->SetVisAttributes(ColorOfQuartzRod);
 
 /*

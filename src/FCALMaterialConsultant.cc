@@ -256,8 +256,9 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   Water->AddElement(elH, natoms = 2);
   Water->AddElement(elO, natoms = 1);
   
+  //Quartz
   density= 2.32*g/cm3,
-  G4Material* SiO2 = new G4Material("Quartz",density,nel=2);
+  SiO2 = new G4Material("Quartz",density,nel=2);
   SiO2->AddElement(elSi, natoms=1);
   SiO2->AddElement(elO , natoms=2);
 

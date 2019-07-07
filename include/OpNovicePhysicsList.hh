@@ -36,6 +36,7 @@
 
 #include "globals.hh"
 #include "G4VUserPhysicsList.hh"
+#include "G4VPhysicsConstructor.hh"
 
 class OpNovicePhysicsListMessenger;
 
@@ -65,8 +66,9 @@ class OpNovicePhysicsList : public G4VUserPhysicsList
     //these methods Construct physics processes and register them
     void ConstructDecay();
     void ConstructEM();
+    void ConstructNeutron();
     void ConstructOp();
-
+    void addHadronic();
     //for the Messenger 
     void SetVerbose(G4int);
     void SetNbOfPhotonsCerenkov(G4int);
@@ -77,7 +79,7 @@ class OpNovicePhysicsList : public G4VUserPhysicsList
 
     static G4ThreadLocal G4int fVerboseLevel;
     static G4ThreadLocal G4int fMaxNumPhotonStep;
-
+    std::vector<G4VPhysicsConstructor*> hadronPhysics;
     static G4ThreadLocal G4Cerenkov* fCerenkovProcess;
     static G4ThreadLocal G4Scintillation* fScintillationProcess;
     static G4ThreadLocal G4OpAbsorption* fAbsorptionProcess;
