@@ -83,7 +83,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 //
 // ------------ Generate & Add Material Properties Table ------------
 //
-
+/*
 
   OpticalConsultant * OpticalProperty = new OpticalConsultant();
   OpticalProperty->GetInstance();  
@@ -95,9 +95,10 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   // Set the Birks Constant for the Water scintillator
 
   water->GetIonisation()->SetBirksConstant(0.126*mm/MeV);
-
+*/
 //
 // ------------- Volumes --------------
+
 
 // The experimental Hall
 //
@@ -108,7 +109,6 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
   G4VPhysicalVolume* expHall_phys
     = new G4PVPlacement(0,G4ThreeVector(),expHall_log,"World",0,false,0);
-
 
 
 // The cladding shell
@@ -136,13 +136,13 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
 //Add visualization color
 
-  G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(G4Colour(1.0,0,0));
-  cladding_log->SetVisAttributes(ColorOfQuartzRod);
+ 
   
   G4VisAttributes * ColorOfCladding = new G4VisAttributes(G4Colour(0,0,1.0));
   quartz_rod_log->SetVisAttributes(ColorOfCladding);
   
- 
+  //G4VisAttributes * ColorOfQuartzRod = new G4VisAttributes(G4Colour(1.0,0,0));
+  //cladding_log->SetVisAttributes(ColorOfQuartzRod);
 
 /*
 //  ------------- Surfaces --------------
