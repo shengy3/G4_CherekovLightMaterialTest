@@ -56,6 +56,7 @@
 #include "globals.hh"
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4NistManager.hh"
 
 FCALMaterialConsultant *FCALMaterialConsultant::theFCALMaterialConsultant = NULL;
 
@@ -257,11 +258,16 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   Water->AddElement(elO, natoms = 1);
   
   //Quartz
-  density= 2.32*g/cm3,
-  SiO2 = new G4Material("Quartz",density,nel=2);
-  SiO2->AddElement(elSi, natoms=1);
-  SiO2->AddElement(elO , natoms=2);
+  //Use NIST to create SiO2
+  G4NistManager* nist = G4NistManager::Instance();
+  SiO2    = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
 
+  /*Old version of SiO2
+    density= 2.32*g/cm3,
+    SiO2 = new G4Material("Quartz",density,nel=2);
+    SiO2->AddElement(elSi, natoms=1);
+    SiO2->AddElement(elO , natoms=2);
+  */
 
 }
 

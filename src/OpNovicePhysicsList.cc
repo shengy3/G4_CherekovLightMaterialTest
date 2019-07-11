@@ -59,7 +59,7 @@
 #include "G4EmSaturation.hh"
 
 G4ThreadLocal G4int OpNovicePhysicsList::fVerboseLevel = 1;
-G4ThreadLocal G4int OpNovicePhysicsList::fMaxNumPhotonStep = 20;
+G4ThreadLocal G4int OpNovicePhysicsList::fMaxNumPhotonStep = 300;
 G4ThreadLocal G4Cerenkov *OpNovicePhysicsList::fCerenkovProcess = 0;
 G4ThreadLocal G4Scintillation *OpNovicePhysicsList::fScintillationProcess = 0;
 G4ThreadLocal G4OpAbsorption *OpNovicePhysicsList::fAbsorptionProcess = 0;
