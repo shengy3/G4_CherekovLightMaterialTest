@@ -101,6 +101,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   water->GetIonisation()->SetBirksConstant(0.126*mm/MeV);
 */
 
+/*
 
  const G4int nEntries = 32;
 
@@ -175,7 +176,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   
   air->SetMaterialPropertiesTable(myMPT2);
 
-
+ */
 //
 // ------------- Volumes --------------
 
