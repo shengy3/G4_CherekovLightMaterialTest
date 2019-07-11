@@ -112,9 +112,9 @@ void OpNoviceStackingAction::NewStage()
          << fScintillationCounter << G4endl;
   G4cout << "Number of Cerenkov photons produced in this event : "
          << fCerenkovCounter << G4endl;
-  G4cout << "Number of Gamma photons produced in this event : "
+  G4cout << "Number of Gamma produced in this event : "
          << fGammaCounter << G4endl;
-  G4cout << "Number of electron photons produced in this event : "
+  G4cout << "Number of electron produced in this event : "
          << fElectronCounter << G4endl;
 }
 
