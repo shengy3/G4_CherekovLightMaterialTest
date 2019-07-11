@@ -43,7 +43,8 @@
 
 OpNoviceStackingAction::OpNoviceStackingAction()
   : G4UserStackingAction(),
-    fScintillationCounter(0), fCerenkovCounter(0)
+    fScintillationCounter(0), fCerenkovCounter(0), fElectronCounter(0), fGammaCounter(0), fOpticalPhotonCounter(0)
+    
 {}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -61,6 +62,8 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
   // particle is optical photon
   if(aTrack->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition())
   { 
+    std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+    fOpticalPhotonCounter++;
     if(aTrack->GetParentID()>0)
     { // particle is secondary
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
@@ -74,7 +77,7 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
   { 
     if(aTrack->GetParentID()>0)
     { // particle is secondary
-    std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+    //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
     fElectronCounter++;
     /*
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
@@ -90,7 +93,7 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
   { 
     if(aTrack->GetParentID()>0)
     { // particle is secondary
-    std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+    //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
     fGammaCounter++;
     /*
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
@@ -108,9 +111,13 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
 
 void OpNoviceStackingAction::NewStage()
 {
+  /*
   G4cout << "Number of Scintillation photons produced in this event : "
          << fScintillationCounter << G4endl;
   G4cout << "Number of Cerenkov photons produced in this event : "
+         << fCerenkovCounter << G4endl;
+  */
+  G4cout << "Number of Optical photons produced in this event : "
          << fCerenkovCounter << G4endl;
   G4cout << "Number of Gamma produced in this event : "
          << fGammaCounter << G4endl;
@@ -124,6 +131,9 @@ void OpNoviceStackingAction::PrepareNewEvent()
 {
   fScintillationCounter = 0;
   fCerenkovCounter = 0;
+  //fElectronCounter = 0;
+  //fGammaCounter = 0;
+  //fOpticalPhotonCounter = 0; 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

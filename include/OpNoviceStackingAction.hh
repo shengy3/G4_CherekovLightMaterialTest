@@ -54,6 +54,7 @@ class OpNoviceStackingAction : public G4UserStackingAction
     G4int fCerenkovCounter;
     G4int fGammaCounter;
     G4int fElectronCounter;
+    G4int fOpticalPhotonCounter;
 
 };
 
