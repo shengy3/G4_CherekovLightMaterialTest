@@ -239,7 +239,7 @@ void OpNovicePhysicsList::addHadronic(void)
 {
   hadronPhysics.push_back(new G4HadronPhysicsFTFP_BERT(verboseLevel));
   G4NeutronTrackingCut *input = new G4NeutronTrackingCut(verboseLevel);
-  input->SetKineticEnergyLimit(0.2 * CLHEP::MeV);
+  input->SetKineticEnergyLimit(0.0001* CLHEP::eV);
   input->SetTimeLimit(0.1 * CLHEP::ms);
   hadronPhysics.push_back(input);
   hadronPhysics.push_back(new G4StoppingPhysics(verboseLevel));

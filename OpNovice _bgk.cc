@@ -76,7 +76,6 @@ namespace {
 
 int main(int argc,char** argv)
 {
-  /*
   // Evaluate arguments
   //
   if ( argc > 9 ) {
@@ -105,8 +104,6 @@ int main(int argc,char** argv)
       return 1;
     }
   }
-    */
-  G4String macro;
 
   // Instantiate G4UIExecutive if interactive mode
   G4UIExecutive* ui = nullptr;
@@ -128,8 +125,6 @@ int main(int argc,char** argv)
 #endif
 
   // Seed the random number generator manually
-  G4long myseed = 345354;
-
   G4Random::setTheSeed(myseed);
 
   // Set mandatory initialization classes

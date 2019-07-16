@@ -23,54 +23,62 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
+// $Id: PrimaryGeneratorAction.cc 94307 2015-11-11 13:42:46Z gcosmo $
 //
-/// \file OpNoviceActionInitialization.cc
-/// \brief Implementation of the OpNoviceActionInitialization class
+/// \file PrimaryGeneratorAction.cc
+/// \brief Implementation of the PrimaryGeneratorAction class
 
-#include "OpNoviceActionInitialization.hh"
-#include "OpNovicePrimaryGeneratorAction.hh"
-#include "OpNoviceRunAction.hh"
-#include "OpNoviceSteppingAction.hh"
-#include "OpNoviceStackingAction.hh"
-#include "OpNoviceSteppingVerbose.hh"
 #include "PrimaryGeneratorAction.hh"
 
+#include "G4LogicalVolumeStore.hh"
+#include "G4LogicalVolume.hh"
+#include "G4Box.hh"
+#include "G4Event.hh"
+#include "G4RunManager.hh"
+#include "G4ParticleGun.hh"
+#include "G4ParticleTable.hh"
+#include "G4ParticleDefinition.hh"
+#include "G4SystemOfUnits.hh"
+#include "Randomize.hh"
+#include "G4GeneralParticleSource.hh"
+
+#include <iostream>
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-OpNoviceActionInitialization::OpNoviceActionInitialization()
- : G4VUserActionInitialization()
-{}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-OpNoviceActionInitialization::~OpNoviceActionInitialization()
-{}
-
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-void OpNoviceActionInitialization::BuildForMaster() const
+PrimaryGeneratorAction::PrimaryGeneratorAction()
+: G4VUserPrimaryGeneratorAction(),
+  fParticleGun(0)
 {
-  SetUserAction(new OpNoviceRunAction());
+  fParticleGun = new G4GeneralParticleSource(); 
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-void OpNoviceActionInitialization::Build() const
+PrimaryGeneratorAction::~PrimaryGeneratorAction()
 {
-  //SetUserAction(new OpNovicePrimaryGeneratorAction());
-  SetUserAction(new PrimaryGeneratorAction());
-  
-  SetUserAction(new OpNoviceRunAction());
-  SetUserAction(new OpNoviceSteppingAction());
-  SetUserAction(new OpNoviceStackingAction());
+  delete fParticleGun;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-G4VSteppingVerbose*
-               OpNoviceActionInitialization::InitializeSteppingVerbose() const
+void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-  return new OpNoviceSteppingVerbose();
-}  
+  fParticleGun->GeneratePrimaryVertex(anEvent);
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
