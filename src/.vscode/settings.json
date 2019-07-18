@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.icc": "cpp",
+        "rcsv_ntuple": "cpp",
+        "streamers": "cpp",
+        "branch_element": "cpp",
+        "value": "cpp",
+        "aidas": "cpp",
+        "array": "cpp",
+        "chrono": "cpp",
+        "functional": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "type_traits": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    }
+}

@@ -38,51 +38,67 @@
 #include "G4ParticleTypes.hh"
 #include "G4Track.hh"
 #include "G4ios.hh"
+#include "Analysis.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 OpNoviceStackingAction::OpNoviceStackingAction()
-  : G4UserStackingAction(),
-    fScintillationCounter(0), fCerenkovCounter(0), fElectronCounter(0), fGammaCounter(0), fOpticalPhotonCounter(0)
-    
-{}
+    : G4UserStackingAction(),
+      fScintillationCounter(0), fCerenkovCounter(0), fElectronCounter(0), fGammaCounter(0), fOpticalPhotonCounter(0), PrimaryParticleEnergy(0)
+
+{
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 OpNoviceStackingAction::~OpNoviceStackingAction()
-{}
+{
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 G4ClassificationOfNewTrack
-OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
-{ 
+OpNoviceStackingAction::ClassifyNewTrack(const G4Track *aTrack)
+{
   //test for the definition
-  
+      if (aTrack->GetTrackID() == G4double(1))
+    {
+      PrimaryParticleEnergy = aTrack->GetTotalEnergy();
+    }
+
   // particle is optical photon
-  if(aTrack->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition())
-  { 
+  if (aTrack->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition())
+  {
     //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
-      fOpticalPhotonCounter++;
-    
-    if(aTrack->GetParentID()>0)
+    //fOpticalPhotonCounter++;
+    if (aTrack->GetTrackID() == G4double(1))
+    {
+      PrimaryParticleEnergy = aTrack->GetTotalEnergy();
+    }
+    G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
+
+    if (aTrack->GetParentID() > 0)
     { // particle is secondary
       //std::cout << "secondary particle "<< aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
-      if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
+      //if (aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
         fScintillationCounter++;
-      if(aTrack->GetCreatorProcess()->GetProcessName() == "Cerenkov")
-        fCerenkovCounter++;
-
+      if (aTrack->GetCreatorProcess()->GetProcessName() == "Cerenkov")
+      {
+      fCerenkovCounter++;
+      analysisManager->FillNtupleDColumn(0, PrimaryParticleEnergy);
+      analysisManager->FillNtupleDColumn(1, 1);
+      analysisManager->AddNtupleRow();
+      }
     }
   }
-  // particle is electron 
-  if(aTrack->GetDefinition() == G4Electron::ElectronDefinition())
-  { 
-    if(aTrack->GetParentID()>0)
+  // particle is electron
+  if (aTrack->GetDefinition() == G4Electron::ElectronDefinition())
+  {
+    if (aTrack->GetParentID() > 0)
     { // particle is secondary
-    //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
-    fElectronCounter++;
-    /*
+      //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+      fElectronCounter++;
+      /*
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
         fScintillationCounter++;
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Cerenkov")
@@ -91,14 +107,14 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
     }
   }
 
-  // particle is Gamma 
-  if(aTrack->GetDefinition() == G4Gamma::GammaDefinition())
-  { 
-    if(aTrack->GetParentID()>0)
+  // particle is Gamma
+  if (aTrack->GetDefinition() == G4Gamma::GammaDefinition())
+  {
+    if (aTrack->GetParentID() > 0)
     { // particle is secondary
-    //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
-    fGammaCounter++;
-    /*
+      //std::cout << aTrack->GetCreatorProcess()->GetProcessName() << std::endl;
+      fGammaCounter++;
+      /*
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Scintillation")
         fScintillationCounter++;
       if(aTrack->GetCreatorProcess()->GetProcessName() == "Cerenkov")
@@ -114,7 +130,11 @@ OpNoviceStackingAction::ClassifyNewTrack(const G4Track * aTrack)
 
 void OpNoviceStackingAction::NewStage()
 {
-  
+    
+  G4cout << "Number of Cerenkov photons produced in this event : "
+         << fCerenkovCounter << G4endl;
+
+  /* 
   G4cout << "Number of Scintillation photons produced in this event : "
          << fScintillationCounter << G4endl;
   
@@ -127,17 +147,26 @@ void OpNoviceStackingAction::NewStage()
          << fGammaCounter << G4endl;
   G4cout << "Number of electron produced in this event : "
          << fElectronCounter << G4endl;
+  */
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void OpNoviceStackingAction::PrepareNewEvent()
 {
+  /*
+  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+  analysisManager->FillNtupleDColumn(0, 0);
+  analysisManager->FillNtupleDColumn(1, 1);
+  analysisManager->AddNtupleRow(); 
+
+ */
+
   //fScintillationCounter = 0;
   //fCerenkovCounter = 0;
   //fElectronCounter = 0;
   //fGammaCounter = 0;
-  //fOpticalPhotonCounter = 0; 
+  //fOpticalPhotonCounter = 0;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

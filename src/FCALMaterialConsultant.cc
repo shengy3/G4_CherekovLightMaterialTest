@@ -128,11 +128,22 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   //-------------------
   // simple materials
   //-------------------
+  G4NistManager* nist = G4NistManager::Instance();
+  //Aluminium    = nist->FindOrBuildMaterial("G4_Al");
+
+  Cd =  nist->FindOrBuildMaterial("G4_Cd");
+
+/* 
+  density = 2.7*g/cm3;
+  a = 26.98*g/mole;
+  Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
+*/
 
   density = 2.7*g/cm3;
   a = 26.98*g/mole;
   Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
-  
+
+
   density = 7.87*g/cm3;
   a = 55.85*g/mole;
   Iron = new G4Material(name="Iron",z=26.,a,density);
@@ -259,7 +270,7 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   
   //Quartz
   //Use NIST to create SiO2
-  G4NistManager* nist = G4NistManager::Instance();
+  //G4NistManager* nist = G4NistManager::Instance();
   SiO2    = nist->FindOrBuildMaterial("G4_SILICON_DIOXIDE");
 
   /*Old version of SiO2
@@ -305,6 +316,7 @@ G4Material * FCALMaterialConsultant::Material(G4String what)
   if(what == "RhoaCell")          material = RhoaCell;
   if(what == "Water")             material = Water;
   if(what == "Quartz")            material = SiO2;
+  if(what == "Cd")                material = Cd;
 
   return material;
 }

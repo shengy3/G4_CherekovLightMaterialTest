@@ -80,6 +80,11 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   G4Material* quartz = FCALMaterials->Material("Quartz");
   G4Material* iron = FCALMaterials->Material("Iron");
   G4Material* water = FCALMaterials->Material("Water");
+  G4Material* copper = FCALMaterials->Material("Copper");
+  G4Material* Aluminium = FCALMaterials->Material("Aluminium ");
+  G4Material* Cd = FCALMaterials->Material("Cd ");
+
+
 
 
  
@@ -120,10 +125,25 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 // The cladding shell
 //
 
+//
+  G4double a,z,density;
+  G4String name;
+  density = 2.7*g/cm3;
+  a = 26.98*g/mole;
+  Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
+
+  density = 8.7*g/cm3;
+  a = 112.411*g/mole;
+  Cd = new G4Material(name="Cd",z=48.,a,density);
+
+
+  
+//
+
   G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 2*cm, 45.0*cm, 0*deg, 360*deg);
 
   G4LogicalVolume* cladding_log
-    = new G4LogicalVolume(cladding,iron,"Cladding",0,0,0);
+    = new G4LogicalVolume(cladding,quartz,"Cladding",0,0,0);
 
   G4VPhysicalVolume* cladding_phys
     = new G4PVPlacement(0,G4ThreeVector(),cladding_log,"Cladding",

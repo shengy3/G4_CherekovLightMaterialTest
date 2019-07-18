@@ -38,6 +38,10 @@
 
 #include "G4Run.hh"
 
+#include "Analysis.hh"
+#include "PrimaryGeneratorAction.hh"
+
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 OpNoviceRunAction::OpNoviceRunAction()
@@ -58,17 +62,22 @@ OpNoviceRunAction::~OpNoviceRunAction()
 
 void OpNoviceRunAction::BeginOfRunAction(const G4Run* aRun)
 {
-  G4cout << "### Run " << aRun->GetRunID() << " start." << G4endl;
-  fTimer->Start();
+  G4AnalysisManager *analysisManager = G4AnalysisManager::Instance();
+  G4String fileName = "nCherekov";
+  analysisManager->OpenFile(fileName);
+  analysisManager->CreateNtuple("Chrerkov", "energy and number cherekov");
+  analysisManager->CreateNtupleDColumn("energy");
+  analysisManager->CreateNtupleDColumn("cherekov");
+ 
+
+  analysisManager->FinishNtuple();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void OpNoviceRunAction::EndOfRunAction(const G4Run* aRun)
 {
-  fTimer->Stop();
-  G4cout << "number of event = " << aRun->GetNumberOfEvent()
-         << " " << *fTimer << G4endl;
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -36,6 +36,7 @@
 #include "globals.hh"
 #include "G4UserStackingAction.hh"
 
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 class OpNoviceStackingAction : public G4UserStackingAction
@@ -48,10 +49,13 @@ class OpNoviceStackingAction : public G4UserStackingAction
     virtual G4ClassificationOfNewTrack ClassifyNewTrack(const G4Track* aTrack);
     virtual void NewStage();
     virtual void PrepareNewEvent();
+    int fCerenkovCounter;
+    G4double PrimaryParticleEnergy;
+
+
 
   private:
     G4int fScintillationCounter;
-    G4int fCerenkovCounter;
     G4int fGammaCounter;
     G4int fElectronCounter;
     G4int fOpticalPhotonCounter;
