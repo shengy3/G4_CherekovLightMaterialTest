@@ -68,6 +68,7 @@ private:
   G4Material *Kapton, *FCAL1CuArKap, *FCAL1CuAr, *FCAL2CuArKap;
   G4Material *FCAL2WFeNi, *FCAL2WFeNiCuAr, *MWPCArCO2;
   G4Material *Water, *SiO2;
+  G4Material *Cd;
  
 };
 
