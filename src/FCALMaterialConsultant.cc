@@ -131,7 +131,18 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   G4NistManager* nist = G4NistManager::Instance();
   //Aluminium    = nist->FindOrBuildMaterial("G4_Al");
 
-  Cd =  nist->FindOrBuildMaterial("G4_Cd");
+  //Cd =  nist->FindOrBuildMaterial("G4_Cd");
+
+/* 
+  density = 2.7*g/cm3;
+  a = 26.98*g/mole;
+  Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
+*/
+  density = 8.7*g/cm3;
+  a = 112.411*g/mole;
+  Cd = new G4Material(name="Cd",z=48.,a,density);
+
+
 
 /* 
   density = 2.7*g/cm3;
