@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/*include*",
+
+                "/home/sheng/work/geant4/N06/OpNovice/include",
                 "/home/sheng/work/geant4/geant4_install/include/Geant4"
             ],
             "defines": [],

@@ -108,6 +108,8 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   quartzMPT->AddProperty("ABSLENGTH",ephoton,absorptionQuartz,NUMENTRIES);   
   
   quartz->SetMaterialPropertiesTable(quartzMPT);
+  silicon->SetMaterialPropertiesTable(quartzMPT);
+
 
 //
 // ------------- Volumes --------------
@@ -125,23 +127,6 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
 
 // The cladding shell
-//
-
-//
-/*
-  G4double a,z,density;
-  G4String name;
-  density = 2.7*g/cm3;
-  a = 26.98*g/mole;
-  Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
-
-  density = 8.7*g/cm3;
-  a = 112.411*g/mole;
-  Cd = new G4Material(name="Cd",z=48.,a,density);
-
-
-   */
-//
 
   G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 10*cm, 45.0*cm, 0*deg, 360*deg);
 
