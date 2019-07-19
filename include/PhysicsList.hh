@@ -33,18 +33,44 @@
 
 #include "G4VModularPhysicsList.hh"
 #include "globals.hh"
+//
+#include "G4ProcessManager.hh"
+
+#include "G4Cerenkov.hh"
+#include "G4Scintillation.hh"
+#include "G4OpAbsorption.hh"
+#include "G4OpRayleigh.hh"
+#include "G4OpMieHG.hh"
+#include "G4OpBoundaryProcess.hh"
+#include "G4LossTableManager.hh"
+#include "G4EmSaturation.hh"
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class PhysicsList: public G4VModularPhysicsList
+class PhysicsList : public G4VModularPhysicsList
 {
 public:
   PhysicsList();
- ~PhysicsList();
+  ~PhysicsList();
+  //void ConstructOp();
+  //for the Messenger
+  //void SetVerbose(G4int);
+  //void SetNbOfPhotonsCerenkov(G4int);
 
 public:
   virtual void ConstructParticle();
   virtual void SetCuts();
+/*
+  static G4ThreadLocal G4int fVerboseLevel;
+  static G4ThreadLocal G4int fMaxNumPhotonStep;
+  static G4ThreadLocal G4Cerenkov *fCerenkovProcess;
+  static G4ThreadLocal G4Scintillation *fScintillationProcess;
+  static G4ThreadLocal G4OpAbsorption *fAbsorptionProcess;
+  static G4ThreadLocal G4OpRayleigh *fRayleighScatteringProcess;
+  static G4ThreadLocal G4OpMieHG *fMieHGScatteringProcess;
+  static G4ThreadLocal G4OpBoundaryProcess *fBoundaryProcess;
+   */
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

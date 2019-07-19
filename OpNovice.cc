@@ -53,7 +53,7 @@
 
 #include "G4UImanager.hh"
 
-#include "OpNovicePhysicsList.hh"
+#include "PhysicsList.hh"
 #include "OpNoviceDetectorConstruction.hh"
 
 #include "OpNoviceActionInitialization.hh"
@@ -137,7 +137,7 @@ int main(int argc,char** argv)
   // Detector construction
   runManager-> SetUserInitialization(new OpNoviceDetectorConstruction());
   // Physics list
-  runManager-> SetUserInitialization(new OpNovicePhysicsList());
+  runManager-> SetUserInitialization(new PhysicsList());
   // User action initialization
   runManager->SetUserInitialization(new OpNoviceActionInitialization());
 
