@@ -54,7 +54,7 @@
 #include "G4UImanager.hh"
 
 #include "PhysicsList.hh"
-#include "OpNovicePhysicsList.hh"
+
 #include "OpNoviceDetectorConstruction.hh"
 
 #include "OpNoviceActionInitialization.hh"

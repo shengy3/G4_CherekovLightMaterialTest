@@ -70,7 +70,7 @@ private:
 // NEW ADD MATERIAL
   G4Material *Cd, *Silicon;
   G4Material *Water, *SiO2;
-  G4Material *Cd, *Silicon;
+
  
 };
 
