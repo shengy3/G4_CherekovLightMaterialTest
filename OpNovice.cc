@@ -138,7 +138,9 @@ int main(int argc,char** argv)
   // Detector construction
   runManager-> SetUserInitialization(new OpNoviceDetectorConstruction());
   // Physics list
-  runManager-> SetUserInitialization(new OpNovicePhysicsList());
+  //runManager-> SetUserInitialization(new OpNovicePhysicsList());
+  runManager-> SetUserInitialization(new PhysicsList());
+
   // User action initialization
   runManager->SetUserInitialization(new OpNoviceActionInitialization());
 
