@@ -1,0 +1,1699 @@
+**************************************************************
+Geant4 version Name: geant4-10-05-patch-01    (17-April-2019)
+Copyright : Geant4 Collaboration
+References : NIM A 506 (2003), 250-303
+: IEEE-TNS 53 (2006), 270-278
+: NIM A 835 (2016), 186-225
+WWW : http://geant4.org/
+**************************************************************
+G4Material WARNING: duplicate name of material Cd
+G4Material WARNING: duplicate name of material Aluminium
+G4Material WARNING: duplicate name of material Iron
+G4Material WARNING: duplicate name of material Copper
+G4Material WARNING: duplicate name of material Tungsten
+G4Material WARNING: duplicate name of material Lead
+G4Material WARNING: duplicate name of material LiquidArgon
+G4Material WARNING: duplicate name of material ArgonGas
+G4Material WARNING: duplicate name of material Nickel
+G4Material WARNING: duplicate name of material Air
+G4Material WARNING: duplicate name of material Vacuum
+G4Material WARNING: duplicate name of material CO2
+G4Material WARNING: duplicate name of material Kapton
+G4Material WARNING: duplicate name of material Polystyrene
+G4Material WARNING: duplicate name of material FCAL1CuArKap
+G4Material WARNING: duplicate name of material FCAL1CuAr
+G4Material WARNING: duplicate name of material FCAL2CuArKap
+G4Material WARNING: duplicate name of material FCAL2WFeNi
+G4Material WARNING: duplicate name of material FCAL2WFeNiCuAr
+G4Material WARNING: duplicate name of material MWPCArCO2
+G4Material WARNING: duplicate name of material ShieldingConcrete
+G4Material WARNING: duplicate name of material StainlessSteel
+G4Material WARNING: duplicate name of material Water
+FTFP_BERT_HP : new threshold between BERT and FTFP is over the interval
+for pions :   3 to 12 GeV
+for kaons :   3 to 12 GeV
+for proton :  3 to 12 GeV
+for neutron : 3 to 12 GeV
+/home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic
+@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+ASCIITree (ATree)
+DAWNFILE (DAWNFILE)
+G4HepRep (HepRepXML)
+G4HepRepFile (HepRepFile)
+RayTracer (RayTracer)
+VRML1FILE (VRML1FILE)
+VRML2FILE (VRML2FILE)
+gMocrenFile (gMocrenFile)
+OpenGLImmediateQt (OGLIQt, OGLI)
+OpenGLStoredQt (OGLSQt, OGL, OGLS)
+OpenGLImmediateX (OGLIX, OGLIQt_FALLBACK)
+OpenGLStoredX (OGLSX, OGLSQt_FALLBACK)
+RayTracerX (RayTracerX)
+Registering model factories...
+You have successfully registered the following model factories.
+Registered model factories:
+generic
+drawByAttribute
+drawByCharge
+drawByOriginVolume
+drawByParticleID
+drawByEncounteredVolume
+Registered filter factories:
+attributeFilter
+chargeFilter
+originVolumeFilter
+particleFilter
+encounteredVolumeFilter
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+Visualization verbosity changed to errors (2)
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+  Run ID (RunID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+Visualization verbosity changed to warnings (3)
+# Macro file for JZCaPA beam test 2018
+#
+# To be run preferably in batch, without graphics:
+#
+# 150 GeV NEUTRON
+# Initialize kernel
+#/gps/particle ion
+#/gps/ion 82 208 0 0.0
+#/gps/energy 31.2 TeV
+# using alphas is useful if you would like to visualize the tracks (Pb ions require much more computing time)
+#/gps/particle ion
+#/gps/ion 2 4 0 0.0
+#/gps/energy 600 GeV
+#/gps/particle proton
+# the beam energy is in gaussian profile
+# General particle source
+#
+#
+#
+# the beam is travelling along the z-axis
+#
+#if using these commands in interactive mode to visualize, use this to allow more events to be displayed (do not use in batch mode)
+#/vis/ogl/set/displayListLimit 1000000
+##############################################################
+##############################################################
+# number of events
+=======================================================================
+======       Radioactive Decay Physics Parameters              ========
+=======================================================================
+Max life time                                     0.14427 ps
+Internal e- conversion flag                       1
+Stored internal conversion coefficients           1
+Enable correlated gamma emission                  0
+Max 2J for sampling of angular correlations       10
+Atomic de-excitation enabled                      1
+Auger electron emission enabled                   1
+Auger cascade enabled                             1
+Check EM cuts disabled for atomic de-excitation   1
+Use Bearden atomic level energies                 0
+=======================================================================
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Inelastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Inelastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Inelastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/8_17_Oxygen
+NeutronHP: /Elastic file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/11_22_Sodium
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+NeutronHP: /Elastic file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Elastic/CrossSection/74_182_Tungsten
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Inelastic
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 6, A = 13 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Capture file for Z = 8, A = 18 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/8_17_Oxygen
+NeutronHP: /Capture file for Z = 10, A = 20 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 21 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 10, A = 22 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/11_22_Sodium
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+NeutronHP: /Capture file for Z = 74, A = 180 is not found and NeutronHP will use /home/sheng/work/geant4/geant4_install/share/Geant4-10.5.1/data/G4NDL4.5/Capture/CrossSection/74_182_Tungsten
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionElastic
+        Model:          NNDiffuseElastic: 0 meV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 meV/n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 meV/n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 meV/n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 100 TeV
+Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 meV ---> 100 TeV
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 meV ---> 100 TeV
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:              AntiAGlauber: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 meV/n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:            BertiniCascade: 0 meV ---> 3.5 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+Cr_sctns:            PhotoNuclearXS: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 100 TeV
+Cr_sctns:            Glauber-Gribov: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 meV ---> 12 GeV
+Cr_sctns:            Glauber-Gribov: 0 meV ---> 100 TeV
+     Cr_sctns:  ChipsKaonPlusInelasticXS: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 100 TeV
+Cr_sctns:            Glauber-Gribov: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 meV ---> 12 GeV
+Cr_sctns:            Glauber-Gribov: 0 meV ---> 100 TeV
+     Cr_sctns: ChipsKaonMinusInelasticXS: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 100 TeV
+Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:            BertiniCascade: 0 meV ---> 6 GeV
+        Model:                      FTFP: 2 GeV ---> 100 TeV
+Cr_sctns:   ChipsHyperonInelasticXS: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 19.5 MeV ---> 100 TeV
+        Model:          NeutronHPElastic: 0 meV ---> 20 MeV
+Cr_sctns:        NeutronHPElasticXS: 0 meV ---> 20 MeV
+     Cr_sctns:        G4NeutronElasticXS: 0 meV ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 19.9 MeV ---> 12 GeV
+        Model:        NeutronHPInelastic: 0 meV ---> 20 MeV
+Cr_sctns:      NeutronHPInelasticXS: 0 meV ---> 20 MeV
+     Cr_sctns:       Barashenkov-Glauber: 0 meV ---> 100 TeV
+
+  Process: nCapture
+        Model:          NeutronHPCapture: 0 meV ---> 20 MeV
+        Model:               nRadCapture: 19.9 MeV ---> 100 TeV
+Cr_sctns:        NeutronHPCaptureXS: 0 meV ---> 20 MeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 meV ---> 100 TeV
+
+  Process: nFission
+        Model:          NeutronHPFission: 0 meV ---> 20 MeV
+        Model:                G4LFission: 19.9 MeV ---> 100 TeV
+Cr_sctns:        NeutronHPFissionXS: 0 meV ---> 20 MeV
+     Cr_sctns:          GheishaFissionXS: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+Cr_sctns:       Barashenkov-Glauber: 0 meV ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 meV ---> 12 GeV
+Cr_sctns: Barashenkov-Glauber-Gribov: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV ---> 1.0001 GeV
+        Model:           hElasticGlauber: 1 GeV ---> 100 TeV
+Cr_sctns:       Barashenkov-Glauber: 0 meV ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 meV ---> 12 GeV
+Cr_sctns: Barashenkov-Glauber-Gribov: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 meV ---> 100 TeV
+Cr_sctns:       Barashenkov-Glauber: 0 meV ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 meV ---> 12 GeV
+Cr_sctns:       Barashenkov-Glauber: 0 meV ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 meV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:            GheishaElastic: 0 meV ---> 100 TeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 meV/n ---> 4 GeV/n
+        Model:                      FTFP: 2 GeV/n ---> 100 TeV/n
+Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 meV ---> 100 TeV
+     Cr_sctns:          GheishaInelastic: 0 meV ---> 100 TeV
+
+================================================================
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0        5        0        10        0       95       105   QuartzRod Transportation
+3        0       -5        0        10        0       10       115    Cladding Transportation
+4        0     -100        0        10        0       95       210       World Transportation
+5        0     -500        0        10        0      400       610  OutOfWorld Transportation
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0        5        0        10        0       95       105   QuartzRod Transportation
+3        0       -5        0        10        0       10       115    Cladding Transportation
+4        0     -100        0        10        0       95       210       World Transportation
+5        0     -500        0        10        0      400       610  OutOfWorld Transportation
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0     46.8        0         0        0     53.2      63.2    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 7,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     46.8        0   0.00375        0        0         0    Cladding initStep
+1 -0.00358     46.8  0.00357         0 3.97e-05  0.00516   0.00516    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0 -0.00358     46.8  0.00357  9.49e-05        0        0         0    Cladding initStep
+1 -0.00358     46.8  0.00358         0 9.49e-05  4.9e-06   4.9e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0 -0.00358     46.8  0.00357  9.49e-05        0        0         0    Cladding initStep
+1 -0.00358     46.8  0.00358         0 9.49e-05  4.9e-06   4.9e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0 -0.00358     46.8  0.00357  2.99e-05        0        0         0    Cladding initStep
+1 -0.00358     46.8  0.00357         0 2.99e-05 2.75e-06  2.75e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 9,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0 -0.00358     46.8  0.00357   0.00157        0        0         0    Cladding initStep
+1 -0.00357     46.8  0.00358         0  0.00157 7.96e-05  7.96e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0 -0.00358     46.8  0.00357   0.00192        0        0         0    Cladding initStep
+1 -0.00355     46.8  0.00357         0  0.00192 0.000107  0.000107    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     46.8        0   0.00375        0        0         0    Cladding initStep
+1  0.00625     46.8 -0.00625         0 4.03e-05  0.00902   0.00902    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0  0.00625     46.8 -0.00625  8.78e-05        0        0         0    Cladding initStep
+1  0.00625     46.8 -0.00625         0 8.78e-05 4.71e-06  4.71e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0  0.00625     46.8 -0.00625  8.85e-05        0        0         0    Cladding initStep
+1  0.00625     46.8 -0.00625         0 8.85e-05 4.73e-06  4.73e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0  0.00625     46.8 -0.00625   0.00161        0        0         0    Cladding initStep
+1  0.00625     46.8 -0.00624         0  0.00161 8.28e-05  8.28e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0  0.00625     46.8 -0.00625   0.00192        0        0         0    Cladding initStep
+1  0.00628     46.8 -0.00625         0  0.00192 0.000107  0.000107    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     46.8        0      1.78        0        0         0    Cladding initStep
+1      1.1     55.3     6.72      1.05        0     10.9      10.9    Cladding compt
+2     12.9     65.1       15     0.465        0     17.4      28.3    Cladding compt
+3     9.26     72.2     18.9     0.366        0      8.9      37.2    Cladding compt
+4     7.75     72.7     21.8     0.154        0     3.27      40.5    Cladding compt
+5     10.3     71.7    -5.35     0.103        0     27.3      67.7    Cladding compt
+6     15.5     72.2  -0.0889    0.0972        0     7.39      75.1    Cladding compt
+7       23     58.5     15.5    0.0866        0     22.1      97.3    Cladding compt
+8     11.2     51.5     23.1    0.0782        0     15.7       113    Cladding compt
+9     9.09     53.5       24    0.0757        0     3.05       116    Cladding compt
+10     2.87     61.4     38.1     0.075        0     17.3       133    Cladding compt
+11     2.35     62.2     41.9         0 6.52e-06     3.92       137    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 28,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     2.35     62.2     41.9   0.00182        0        0         0    Cladding initStep
+1     2.34     62.2     41.9         0 1.31e-05  0.00567   0.00567    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 30,   Parent ID = 28
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     2.34     62.2     41.9  9.49e-05        0        0         0    Cladding initStep
+1     2.34     62.2     41.9         0 9.49e-05  4.9e-06   4.9e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 29,   Parent ID = 28
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     2.34     62.2     41.9   0.00171        0        0         0    Cladding initStep
+1     2.34     62.2     41.9         0  0.00171 9.04e-05  9.04e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 27,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     2.35     62.2     41.9    0.0731        0        0         0    Cladding initStep
+1     2.35     62.2     41.9         0   0.0731   0.0461    0.0461    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 26,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     2.87     61.4     38.1  0.000796        0        0         0    Cladding initStep
+1     2.87     61.4     38.1         0 0.000796 3.15e-05  3.15e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 25,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.09     53.5       24   0.00242        0        0         0    Cladding initStep
+1     9.09     53.5       24         0  0.00242 0.000151  0.000151    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 24,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     11.2     51.5     23.1   0.00844        0        0         0    Cladding initStep
+1     11.2     51.5     23.1         0  0.00844  0.00113   0.00113    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 23,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0       23     58.5     15.5    0.0106        0        0         0    Cladding initStep
+1       23     58.5     15.5         0   0.0106  0.00165   0.00165    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 22,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     15.5     72.2  -0.0889   0.00585        0        0         0    Cladding initStep
+1     15.5     72.2  -0.0889         0  0.00585 0.000612  0.000612    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 21,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     10.3     71.7    -5.35    0.0512        0        0         0    Cladding initStep
+1     10.3     71.7    -5.36         0   0.0512    0.025     0.025    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     7.75     72.7     21.8     0.212        0        0         0    Cladding initStep
+1     7.72     72.8     21.9         0    0.212    0.265     0.265    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.26     72.2     18.9     0.099        0        0         0    Cladding initStep
+1     9.26     72.2     18.9         0    0.099   0.0769    0.0769    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     12.9     65.1       15     0.587        0        0         0    Cladding initStep
+1     13.3     65.2     15.1         0    0.587     1.17      1.17    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 17,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0      1.1     55.3     6.72     0.727        0        0         0    Cladding initStep
+1    0.831     55.7     7.02         0    0.727     1.55      1.55    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     46.8        0      5.11        0        0         0    Cladding initStep
+1     41.3     29.5    -13.1         0        0     46.7      46.7    Cladding conv
+*********************************************************************************************************
+* G4Track Information:   Particle = e+,   Track ID = 32,   Parent ID = 4
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     41.3     29.5    -13.1      1.77        0        0         0    Cladding initStep
+1     42.8       28    -12.9         0     1.77     4.53      4.53    Cladding eIoni
+2     42.8       28    -12.9         0        0        0      4.53    Cladding annihil
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 34,   Parent ID = 32
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     42.8       28    -12.9     0.511        0        0         0    Cladding initStep
+1     92.4     38.1     70.6     0.511        0     97.7      97.7       World Transportation
+2      348     90.3      500     0.511        0      502       600  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 33,   Parent ID = 32
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     42.8       28    -12.9     0.511        0        0         0    Cladding initStep
+1     41.5     27.7      -15     0.366        0     2.52      2.52    Cladding compt
+2    -11.1     12.8    -20.8     0.335        0     54.9      57.5    Cladding compt
+3    -60.7    -37.7    -31.8      0.22        0     71.7       129    Cladding compt
+4    -95.4    -14.7    -35.5      0.19        0     41.8       171    Cladding compt
+5    -96.6      -14    -34.1     0.157        0     2.01       173    Cladding compt
+6    -98.7    -16.2    -32.9     0.157        0     3.23       176       World Transportation
+7     -500     -451      206     0.157        0      638       814  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 39,   Parent ID = 33
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -96.6      -14    -34.1    0.0329        0        0         0    Cladding initStep
+1    -96.6      -14    -34.1         0   0.0329   0.0116    0.0116    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 38,   Parent ID = 33
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -95.4    -14.7    -35.5    0.0298        0        0         0    Cladding initStep
+1    -95.4    -14.7    -35.5         0   0.0298  0.00981   0.00981    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 37,   Parent ID = 33
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -60.7    -37.7    -31.8     0.115        0        0         0    Cladding initStep
+1    -60.7    -37.7    -31.8         0    0.115   0.0993    0.0993    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 36,   Parent ID = 33
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -11.1     12.8    -20.8    0.0311        0        0         0    Cladding initStep
+1    -11.1     12.8    -20.8         0   0.0311   0.0106    0.0106    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 35,   Parent ID = 33
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     41.5     27.7      -15     0.145        0        0         0    Cladding initStep
+1     41.5     27.7    -15.1         0    0.145    0.144     0.144    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 31,   Parent ID = 4
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     41.3     29.5    -13.1      2.32        0        0         0    Cladding initStep
+1     43.9     28.9    -14.2         0     2.32     5.95      5.95    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     46.8        0     0.624        0        0         0    Cladding initStep
+1 0.000155     46.8 -0.000252         0    0.624   0.0011    0.0011    Cladding ionIoni
+2 0.000155     46.8 -0.000252         0        0        0    0.0011    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     46.8        0      2.48        0        0         0    Cladding initStep
+1      -43     90.3     60.9      2.48        0     86.3      86.3       World Transportation
+2     -353      404      500      2.48        0      623       709  OutOfWorld Transportation
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0     40.1        0         0        0     59.9      69.9    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     40.1        0      3.77        0        0         0    Cladding initStep
+1    0.958     19.4      148      2.46        0      150       150    Cladding compt
+2       34      -61      303     0.633        0      178       327    Cladding compt
+3     88.8    -37.9      334     0.588        0     67.2       394    Cladding compt
+4     94.6    -32.3      337     0.588        0     8.64       403       World Transportation
+5      395      257      500     0.588        0      447       850  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 9,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     88.8    -37.9      334    0.0445        0        0         0    Cladding initStep
+1     88.9    -37.9      334         0   0.0445   0.0197    0.0197    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 8,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0       34      -61      303      1.82        0        0         0    Cladding initStep
+1     33.9    -62.2      305         0     1.82     4.61      4.61    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 7,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    0.958     19.4      148      1.31        0        0         0    Cladding initStep
+1    0.631     19.8      149         0     1.31     3.18      3.18    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     40.1        0      3.77        0        0         0    Cladding initStep
+1   -0.142     43.1    -21.9         1        0     22.1      22.1    Cladding compt
+2     6.59     35.8    -31.9     0.259        0       14      36.2    Cladding compt
+3     34.7     64.1   0.0235     0.139        0       51      87.2    Cladding compt
+4     9.53     68.5    -13.6    0.0906        0     28.9       116    Cladding compt
+5     11.4     67.9    -12.1    0.0836        0     2.45       119    Cladding compt
+6     7.54     62.6     11.4    0.0671        0     24.4       143    Cladding compt
+7     5.92     59.8     8.09         0 1.31e-05     4.62       148    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.92     59.8     8.09  9.56e-05        0        0         0    Cladding initStep
+1     5.92     59.8     8.09         0 9.56e-05 4.92e-06  4.92e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 17,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.92     59.8     8.09   0.00172        0        0         0    Cladding initStep
+1     5.93     59.8     8.11         0 6.52e-06   0.0207    0.0207    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 17
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.93     59.8     8.11   0.00171        0        0         0    Cladding initStep
+1     5.93     59.8     8.11         0  0.00171 9.04e-05  9.04e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.92     59.8     8.09    0.0653        0        0         0    Cladding initStep
+1     5.91     59.8     8.09         0   0.0653    0.038     0.038    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     7.54     62.6     11.4    0.0165        0        0         0    Cladding initStep
+1     7.54     62.6     11.4         0   0.0165  0.00354   0.00354    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     11.4     67.9    -12.1   0.00694        0        0         0    Cladding initStep
+1     11.4     67.9    -12.1         0  0.00694 0.000813  0.000813    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.53     68.5    -13.6    0.0489        0        0         0    Cladding initStep
+1     9.53     68.5    -13.6         0   0.0489   0.0231    0.0231    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     34.7     64.1   0.0235     0.119        0        0         0    Cladding initStep
+1     34.7     64.1   0.0445         0    0.119    0.105     0.105    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     6.59     35.8    -31.9     0.743        0        0         0    Cladding initStep
+1     6.77     35.5    -32.3         0    0.743      1.6       1.6    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0   -0.142     43.1    -21.9      2.77        0        0         0    Cladding initStep
+1   -0.705     44.3    -25.3         0     2.77     7.16      7.16    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     40.1        0      2.03        0        0         0    Cladding initStep
+1   -0.497     33.1    -44.2      0.37        0     44.7      44.7    Cladding compt
+2     8.96     43.9    -44.1     0.346        0     14.3      59.1    Cladding compt
+3       43     90.3    -16.7     0.346        0     63.7       123       World Transportation
+4      343      500      225     0.346        0      563       685  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 21,   Parent ID = 4
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     8.96     43.9    -44.1    0.0247        0        0         0    Cladding initStep
+1     8.96     43.9    -44.1         0   0.0247   0.0071    0.0071    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 4
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0   -0.497     33.1    -44.2      1.66        0        0         0    Cladding initStep
+1   -0.728     32.6    -45.9         0     1.66     4.16      4.16    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = Si29,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     40.1        0     0.363        0        0         0    Cladding initStep
+1 4.14e-05     40.1 3.58e-05         0    0.363 0.000843  0.000843    Cladding ionIoni
+2 4.14e-05     40.1 3.58e-05         0        0        0  0.000843    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     40.1        0    0.0643        0        0         0    Cladding initStep
+1    -47.8       52    -30.6    0.0594        0       58        58    Cladding hadElastic
+2    -72.9     43.3     16.4    0.0517        0       54       112    Cladding hadElastic
+3    -26.6     13.4     -309    0.0488        0      330       442    Cladding hadElastic
+4     65.2     75.9     -324    0.0488        0      112       554       World Transportation
+5      500      371     -397    0.0488        0      531  1.09e+03  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 24,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -26.6     13.4     -309    0.0029        0        0         0    Cladding initStep
+1    -26.6     13.4     -309         0   0.0029 7.41e-05  7.41e-05    Cladding ionIoni
+2    -26.6     13.4     -309         0        0        0  7.41e-05    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 23,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -72.9     43.3     16.4   0.00763        0        0         0    Cladding initStep
+1    -72.9     43.3     16.4         0  0.00763  0.00012   0.00012    Cladding ionIoni
+2    -72.9     43.3     16.4         0        0        0   0.00012    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 22,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -47.8       52    -30.6   0.00493        0        0         0    Cladding initStep
+1    -47.8       52    -30.6         0  0.00493 9.67e-05  9.67e-05    Cladding ionIoni
+2    -47.8       52    -30.6         0        0        0  9.67e-05    Cladding RadioactiveDecay
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0     42.2        0         0        0     57.8      67.8    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     42.2        0      1.78        0        0         0    Cladding initStep
+1     77.1     63.7     -176      1.78        0      193       193       World Transportation
+2      219      103     -500      1.78        0      356       549  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     42.2        0     0.784        0        0         0    Cladding initStep
+1 -0.000432     42.2 -0.000392         0    0.784  0.00114   0.00114    Cladding ionIoni
+2 -0.000432     42.2 -0.000392         0        0        0   0.00114    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     42.2        0      7.44        0        0         0    Cladding initStep
+1     10.5     45.8     9.75         0        0     14.7      14.7    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 7,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     10.5     45.8     9.75     0.583        0        0         0    Cladding initStep
+1    -28.4     95.9     50.7     0.583        0     75.4      75.4       World Transportation
+2     -342      500      381     0.583        0      609       684  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Mg25,   Track ID = 6,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     10.5     45.8     9.75     0.346        0        0         0    Cladding initStep
+1     10.5     45.8     9.75         0    0.346 0.000879  0.000879    Cladding ionIoni
+2     10.5     45.8     9.75         0        0        0  0.000879    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = alpha,   Track ID = 5,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     10.5     45.8     9.75      3.86        0        0         0    Cladding initStep
+1     10.5     45.8     9.75         0     3.86   0.0153    0.0153    Cladding ionIoni
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0       80        0         0        0       20        30    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0       80        0       7.9        0        0         0    Cladding initStep
+1    -28.9     95.7    -2.02       7.9        0     32.9      32.9       World Transportation
+2     -500      353    -35.1       7.9        0      538       571  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0       80        0     0.473        0        0         0    Cladding initStep
+1 0.000186       80 0.000233         0    0.473  0.00096   0.00096    Cladding ionIoni
+2 0.000186       80 0.000233         0        0        0   0.00096    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0       80        0      1.63        0        0         0    Cladding initStep
+1    -11.8     81.6      -18      1.53        0     21.6      21.6    Cladding hadElastic
+2    -13.8     68.3    -20.7      1.48        0     13.7      35.3    Cladding hadElastic
+3   0.0696     31.6       10      1.45        0     49.8      85.1    Cladding hadElastic
+4       22      4.3     8.07       1.4        0     35.1       120    Cladding hadElastic
+5       80     5.25    -35.8       1.3        0     72.7       193    Cladding hadElastic
+6     71.6      2.5    -45.9      1.27        0     13.3       206    Cladding hadElastic
+7     71.2     15.7    -75.3      1.22        0     32.2       238    Cladding hadElastic
+8     71.2     15.7    -75.3      1.22        0   0.0674       239    Cladding hadElastic
+9     51.6     10.7      -97      1.18        0     29.7       268    Cladding hadElastic
+10     40.6     40.6     -122       1.1        0     40.7       309    Cladding hadElastic
+11     22.1     10.2     -156      1.06        0     49.1       358    Cladding hadElastic
+12     5.74     6.98     -156      1.04        0     16.7       375    Cladding hadElastic
+13     3.05     3.96     -157      1.04        0     4.13       379   QuartzRod Transportation
+14    -3.59    -3.48     -159      1.04        0     10.2       389    Cladding Transportation
+15    -44.3    -49.1     -172      1.01        0     62.4       451    Cladding hadElastic
+16    -43.6    -56.6     -187     0.936        0     16.6       468    Cladding hadElastic
+17    -76.5    -64.4     -184     0.936        0       34       502       World Transportation
+18     -500     -164     -153     0.936        0      436       938  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 18,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -43.6    -56.6     -187      0.07        0        0         0    Cladding initStep
+1    -43.6    -56.6     -187         0     0.07 0.000337  0.000337    Cladding ionIoni
+2    -43.6    -56.6     -187         0        0        0  0.000337    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 17,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -44.3    -49.1     -172     0.038        0        0         0    Cladding initStep
+1    -44.3    -49.1     -172         0    0.038  0.00025   0.00025    Cladding ionIoni
+2    -44.3    -49.1     -172         0        0        0   0.00025    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 16,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.74     6.98     -156    0.0169        0        0         0    Cladding initStep
+1     5.74     6.98     -156         0   0.0169 0.000175  0.000175    Cladding ionIoni
+2     5.74     6.98     -156         0        0        0  0.000175    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si29,   Track ID = 15,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     22.1     10.2     -156     0.039        0        0         0    Cladding initStep
+1     22.1     10.2     -156         0    0.039 0.000258  0.000258    Cladding ionIoni
+2     22.1     10.2     -156         0        0        0  0.000258    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 14,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     40.6     40.6     -122    0.0757        0        0         0    Cladding initStep
+1     40.6     40.6     -122         0   0.0757 0.000351  0.000351    Cladding ionIoni
+2     40.6     40.6     -122         0        0        0  0.000351    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 13,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     51.6     10.7      -97    0.0424        0        0         0    Cladding initStep
+1     51.6     10.7      -97         0   0.0424 0.000263  0.000263    Cladding ionIoni
+2     51.6     10.7      -97         0        0        0  0.000263    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 12,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     71.2     15.7    -75.3   0.00127        0        0         0    Cladding initStep
+1     71.2     15.7    -75.3         0  0.00127 4.91e-05  4.91e-05    Cladding ionIoni
+2     71.2     15.7    -75.3         0        0        0  4.91e-05    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 11,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     71.2     15.7    -75.3    0.0463        0        0         0    Cladding initStep
+1     71.2     15.7    -75.3         0   0.0463 0.000274  0.000274    Cladding ionIoni
+2     71.2     15.7    -75.3         0        0        0  0.000274    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 10,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     71.6      2.5    -45.9    0.0362        0        0         0    Cladding initStep
+1     71.6      2.5    -45.9         0   0.0362 0.000244  0.000244    Cladding ionIoni
+2     71.6      2.5    -45.9         0        0        0  0.000244    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 9,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0       80     5.25    -35.8     0.102        0        0         0    Cladding initStep
+1       80     5.25    -35.8         0    0.102 0.000412  0.000412    Cladding ionIoni
+2       80     5.25    -35.8         0        0        0  0.000412    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 8,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0       22      4.3     8.07    0.0493        0        0         0    Cladding initStep
+1       22      4.3     8.07         0   0.0493 0.000283  0.000283    Cladding ionIoni
+2       22      4.3     8.07         0        0        0  0.000283    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 7,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0   0.0696     31.6       10    0.0304        0        0         0    Cladding initStep
+1   0.0696     31.6       10         0   0.0304 0.000226  0.000226    Cladding ionIoni
+2   0.0696     31.6       10         0        0        0  0.000226    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 6,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -13.8     68.3    -20.7    0.0486        0        0         0    Cladding initStep
+1    -13.8     68.3    -20.7         0   0.0486 0.000281  0.000281    Cladding ionIoni
+2    -13.8     68.3    -20.7         0        0        0  0.000281    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 5,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -11.8     81.6      -18    0.0946        0        0         0    Cladding initStep
+1    -11.8     81.6      -18         0   0.0946 0.000395  0.000395    Cladding ionIoni
+2    -11.8     81.6      -18         0        0        0  0.000395    Cladding RadioactiveDecay
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0     45.4        0         0        0     54.6      64.6    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     45.4        0      1.77        0        0         0    Cladding initStep
+1    -10.5     99.4    -9.46      1.77        0     55.8      55.8       World Transportation
+2    -88.6      500    -79.6      1.77        0      414       470  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     45.4        0     0.607        0        0         0    Cladding initStep
+1 -0.000202     45.4 -0.000599         0    0.607  0.00109   0.00109    Cladding ionIoni
+2 -0.000202     45.4 -0.000599         0        0        0   0.00109    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     45.4        0      7.62        0        0         0    Cladding initStep
+1     3.59     44.8     10.6         0        0     11.2      11.2    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 10,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     3.59     44.8     10.6      3.46        0        0         0    Cladding initStep
+1     28.9     51.2     31.8      2.19        0     33.7      33.7    Cladding compt
+2     69.1       63     43.2      1.13        0     43.4      77.1    Cladding compt
+3     73.5     67.8     49.3      1.13        0     8.89        86       World Transportation
+4      402      429      500      1.13        0      665       751  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 10
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     69.1       63     43.2      1.05        0        0         0    Cladding initStep
+1     70.1       63     43.1         0     1.05     2.45      2.45    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 10
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     28.9     51.2     31.8      1.28        0        0         0    Cladding initStep
+1     29.3     51.2       33         0     1.28     3.08      3.08    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 9,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     3.59     44.8     10.6      2.28        0        0         0    Cladding initStep
+1    -31.3     41.5     15.8      1.38        0     35.4      35.4    Cladding compt
+2    -67.7     29.7     1.62     0.515        0     40.8      76.2    Cladding compt
+3      -83    -15.7     22.1     0.212        0     52.1       128    Cladding compt
+4    -80.4    -14.3     23.6     0.169        0     3.33       132    Cladding compt
+5    -79.6    -9.09     22.2     0.109        0     5.49       137    Cladding compt
+6    -84.2    -12.4     27.7     0.101        0     7.92       145    Cladding compt
+7    -77.7    -21.1     55.2    0.0742        0     29.5       175    Cladding compt
+8    -96.8      2.9     32.8    0.0696        0       38       213    Cladding compt
+9     -100      1.2     28.8    0.0696        0     5.42       218       World Transportation
+10     -500     -214     -486    0.0696        0      686       904  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -96.8      2.9     32.8   0.00467        0        0         0    Cladding initStep
+1    -96.8      2.9     32.8         0  0.00467 0.000424  0.000424    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -77.7    -21.1     55.2    0.0272        0        0         0    Cladding initStep
+1    -77.7    -21.1     55.2         0   0.0272  0.00835   0.00835    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -84.2    -12.4     27.7    0.0078        0        0         0    Cladding initStep
+1    -84.2    -12.4     27.7         0   0.0078 0.000988  0.000988    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 17,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -79.6    -9.09     22.2    0.0603        0        0         0    Cladding initStep
+1    -79.6    -9.08     22.2         0   0.0603   0.0331    0.0331    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -80.4    -14.3     23.6    0.0427        0        0         0    Cladding initStep
+1    -80.4    -14.3     23.6         0   0.0427   0.0183    0.0183    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0      -83    -15.7     22.1     0.303        0        0         0    Cladding initStep
+1    -83.1    -15.8     22.1         0    0.303     0.46      0.46    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -67.7     29.7     1.62     0.866        0        0         0    Cladding initStep
+1    -68.3     29.7     1.23         0    0.866     1.93      1.93    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -31.3     41.5     15.8     0.903        0        0         0    Cladding initStep
+1    -31.9     41.6     16.3         0    0.903     2.04      2.04    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 8,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     3.59     44.8     10.6      2.28        0        0         0    Cladding initStep
+1    -82.4    -11.7     89.1     0.604        0      129       129    Cladding compt
+2    -80.4    -59.5     86.8     0.604        0     47.9       177       World Transportation
+3    -61.5     -500     65.9     0.604        0      441       619  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 21,   Parent ID = 8
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -82.4    -11.7     89.1      1.67        0        0         0    Cladding initStep
+1    -83.7      -12     90.3         0     1.67     4.19      4.19    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 7,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     3.59     44.8     10.6      2.28        0        0         0    Cladding initStep
+1     21.9     15.3     22.5     0.972        0     36.7      36.7    Cladding compt
+2     22.7     11.1     20.8     0.761        0     4.68      41.3    Cladding compt
+3    -3.44    -63.5     8.13     0.613        0       80       121    Cladding compt
+4    -1.84    -75.1     1.27     0.569        0     13.6       135    Cladding compt
+5     12.2    -99.2    -22.1     0.569        0     36.4       171       World Transportation
+6      246     -500     -410     0.569        0      605       776  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 25,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -1.84    -75.1     1.27    0.0437        0        0         0    Cladding initStep
+1    -1.84    -75.1     1.27         0   0.0437   0.0191    0.0191    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 24,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -3.44    -63.5     8.13     0.148        0        0         0    Cladding initStep
+1    -3.48    -63.5     8.16         0    0.148     0.15      0.15    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 23,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     22.7     11.1     20.8     0.211        0        0         0    Cladding initStep
+1     22.8       11     20.7         0    0.211    0.264     0.264    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 22,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     21.9     15.3     22.5      1.31        0        0         0    Cladding initStep
+1     22.7     14.6     23.3         0     1.31     3.18      3.18    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = Si30,   Track ID = 6,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     3.59     44.8     10.6     0.313        0        0         0    Cladding initStep
+1     3.59     44.8     10.6         0    0.313 0.000789  0.000789    Cladding ionIoni
+2     3.59     44.8     10.6         0        0        0  0.000789    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 5,   Parent ID = 2
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     3.59     44.8     10.6     0.845        0        0         0    Cladding initStep
+1   -0.288     44.4     10.8     0.806        0      3.9       3.9    Cladding hadElastic
+2      -20     77.8     46.5     0.724        0     52.8      56.7    Cladding hadElastic
+3    -11.9     99.3    -20.4     0.724        0     70.8       127       World Transportation
+4       46      253     -500     0.724        0      507       635  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 27,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0      -20     77.8     46.5    0.0823        0        0         0    Cladding initStep
+1      -20     77.8     46.5         0   0.0823 0.000367  0.000367    Cladding ionIoni
+2      -20     77.8     46.5         0        0        0  0.000367    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 26,   Parent ID = 5
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0   -0.288     44.4     10.8    0.0395        0        0         0    Cladding initStep
+1   -0.288     44.4     10.8         0   0.0395 0.000254  0.000254    Cladding ionIoni
+2   -0.288     44.4     10.8         0        0        0  0.000254    Cladding RadioactiveDecay
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0        5        0        10        0       95       105   QuartzRod Transportation
+3        0       -5        0        10        0       10       115    Cladding Transportation
+4        0    -7.12        0      8.79        0     2.12       117    Cladding hadElastic
+5   -0.522    -4.97    -1.65      8.79        0     2.76       120   QuartzRod Transportation
+6    -2.74     4.18    -8.65      8.79        0     11.7       132    Cladding Transportation
+7    -17.2     63.9    -54.3      8.72        0     76.5       208    Cladding hadElastic
+8      -39     92.1    -66.4      8.72        0     37.7       246       World Transportation
+9     -354      500     -242      8.72        0      544       790  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0    -17.2     63.9    -54.3    0.0722        0        0         0    Cladding initStep
+1    -17.2     63.9    -54.3         0   0.0722 0.000343  0.000343    Cladding ionIoni
+2    -17.2     63.9    -54.3         0        0        0  0.000343    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0    -7.12        0      1.21        0        0         0    Cladding initStep
+1 0.000112    -7.13 0.000355         0     1.21  0.00122   0.00122    Cladding ionIoni
+2 0.000112    -7.13 0.000355         0        0        0   0.00122    Cladding RadioactiveDecay
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0     33.9        0      9.95        0     66.1      76.1    Cladding hadElastic
+3     5.01     4.81    -10.8         0        0     31.5       108    Cladding neutronInelastic
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 9,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8   0.00265        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0  5.4e-05  0.00673   0.00673    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 14,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        5     4.81    -10.8  8.85e-05        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0 8.85e-05 4.73e-06  4.73e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 13,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        5     4.81    -10.8  8.78e-05        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0 8.78e-05 4.71e-06  4.71e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 12,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        5     4.81    -10.8  2.92e-05        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0 2.92e-05 2.72e-06  2.72e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 11,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        5     4.81    -10.8   0.00157        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0  0.00157 7.96e-05  7.96e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 10,   Parent ID = 9
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        5     4.81    -10.8  0.000817        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0 0.000817 3.26e-05  3.26e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 8,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8   0.00265        0        0         0    Cladding initStep
+1     5.01      4.8    -10.8         0 4.03e-05  0.00134   0.00134    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 18,   Parent ID = 8
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01      4.8    -10.8  8.78e-05        0        0         0    Cladding initStep
+1     5.01      4.8    -10.8         0 8.78e-05 4.71e-06  4.71e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 17,   Parent ID = 8
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01      4.8    -10.8  8.85e-05        0        0         0    Cladding initStep
+1     5.01      4.8    -10.8         0 8.85e-05 4.73e-06  4.73e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 16,   Parent ID = 8
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01      4.8    -10.8   0.00161        0        0         0    Cladding initStep
+1     5.01      4.8    -10.8         0  0.00161 8.28e-05  8.28e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 15,   Parent ID = 8
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01      4.8    -10.8  0.000817        0        0         0    Cladding initStep
+1     5.01      4.8    -10.8         0 0.000817 3.26e-05  3.26e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 7,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8     0.585        0        0         0    Cladding initStep
+1     35.5     9.88     2.89     0.585        0     33.8      33.8    Cladding compt
+2     50.7     12.4     10.2       0.4        0     17.1      50.9    Cladding compt
+3     65.1      6.8     4.95     0.163        0     16.3      67.2    Cladding compt
+4     38.5     41.8     34.6     0.108        0     53.1       120    Cladding compt
+5     47.5     33.5     38.4    0.0996        0     12.8       133    Cladding compt
+6     46.7     22.1     51.5    0.0754        0     17.5       151    Cladding compt
+7     46.3     21.3     45.9    0.0688        0     5.68       156    Cladding compt
+8       40       12     43.5    0.0593        0     11.4       168    Cladding compt
+9     86.7    -1.58     21.9    0.0496        0     53.2       221    Cladding compt
+10       82    -4.05     30.1    0.0471        0     9.85       231    Cladding compt
+11     82.8    -5.54     31.3    0.0449        0     2.05       233    Cladding compt
+12     80.7    -15.1     28.5         0 4.68e-05     10.1       243    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 34,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     80.7    -15.1     28.5  9.49e-05        0        0         0    Cladding initStep
+1     80.7    -15.1     28.5         0 9.49e-05  4.9e-06   4.9e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 33,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     80.7    -15.1     28.5  8.85e-05        0        0         0    Cladding initStep
+1     80.7    -15.1     28.5         0 8.85e-05 4.73e-06  4.73e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 32,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     80.7    -15.1     28.5  2.99e-05        0        0         0    Cladding initStep
+1     80.7    -15.1     28.5         0 2.99e-05 2.75e-06  2.75e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 31,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     80.7    -15.1     28.5   0.00157        0        0         0    Cladding initStep
+1     80.7    -15.1     28.5         0  0.00157 7.96e-05  7.96e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 30,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     80.7    -15.1     28.5     0.043        0        0         0    Cladding initStep
+1     80.7    -15.1     28.5         0    0.043   0.0185    0.0185    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 29,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     82.8    -5.54     31.3   0.00227        0        0         0    Cladding initStep
+1     82.8    -5.54     31.3         0  0.00227 0.000137  0.000137    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 28,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0       82    -4.05     30.1   0.00244        0        0         0    Cladding initStep
+1       82    -4.05     30.1         0  0.00244 0.000153  0.000153    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 27,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     86.7    -1.58     21.9   0.00978        0        0         0    Cladding initStep
+1     86.7    -1.58     21.9         0  0.00978  0.00144   0.00144    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 26,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0       40       12     43.5    0.0095        0        0         0    Cladding initStep
+1       40       12     43.5         0   0.0095  0.00138   0.00138    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 25,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     46.3     21.3     45.9   0.00651        0        0         0    Cladding initStep
+1     46.3     21.3     45.9         0  0.00651 0.000731  0.000731    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 24,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     46.7     22.1     51.5    0.0243        0        0         0    Cladding initStep
+1     46.7     22.1     51.5         0   0.0243  0.00688   0.00688    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 23,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     47.5     33.5     38.4   0.00812        0        0         0    Cladding initStep
+1     47.5     33.5     38.4         0  0.00812  0.00106   0.00106    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 22,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     38.5     41.8     34.6    0.0557        0        0         0    Cladding initStep
+1     38.5     41.8     34.6         0   0.0557   0.0289    0.0289    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 21,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     65.1      6.8     4.95     0.237        0        0         0    Cladding initStep
+1     65.2     6.75     4.91         0    0.237    0.316     0.316    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 20,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     50.7     12.4     10.2     0.184        0        0         0    Cladding initStep
+1     50.7     12.5     10.3         0    0.184    0.213     0.213    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 19,   Parent ID = 7
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     35.5     9.88     2.89  0.000204        0        0         0    Cladding initStep
+1     35.5     9.88     2.89         0 0.000204 7.74e-06  7.74e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 6,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8      0.39        0        0         0    Cladding initStep
+1     30.1     30.9    -9.31     0.248        0     36.2      36.2    Cladding compt
+2     32.3     56.1    -73.5     0.209        0       69       105    Cladding compt
+3     31.4     60.1    -74.8     0.129        0     4.24       109    Cladding compt
+4     29.9     56.8    -76.7     0.127        0     4.06       114    Cladding compt
+5     21.5     46.6    -80.1     0.127        0     13.6       127    Cladding Rayl
+6     9.64     34.8    -92.4         0 4.68e-05     20.8       148    Cladding phot
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 43,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.64     34.8    -92.4  9.56e-05        0        0         0    Cladding initStep
+1     9.64     34.8    -92.4         0 9.56e-05 4.92e-06  4.92e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 42,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.64     34.8    -92.4  8.78e-05        0        0         0    Cladding initStep
+1     9.64     34.8    -92.4         0 8.78e-05 4.71e-06  4.71e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 41,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.64     34.8    -92.4  2.92e-05        0        0         0    Cladding initStep
+1     9.64     34.8    -92.4         0 2.92e-05 2.72e-06  2.72e-06    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 40,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.64     34.8    -92.4   0.00157        0        0         0    Cladding initStep
+1     9.64     34.8    -92.4         0  0.00157 7.96e-05  7.96e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 39,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     9.64     34.8    -92.4     0.125        0        0         0    Cladding initStep
+1     9.64     34.8    -92.4         0    0.125    0.114     0.114    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 38,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     29.9     56.8    -76.7   0.00174        0        0         0    Cladding initStep
+1     29.9     56.8    -76.7         0  0.00174 9.24e-05  9.24e-05    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 37,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     31.4     60.1    -74.8    0.0804        0        0         0    Cladding initStep
+1     31.4     60.1    -74.8         0   0.0804   0.0542    0.0542    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 36,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     32.3     56.1    -73.5    0.0385        0        0         0    Cladding initStep
+1     32.3     56.1    -73.5         0   0.0385   0.0153    0.0153    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = e-,   Track ID = 35,   Parent ID = 6
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     30.1     30.9    -9.31     0.142        0        0         0    Cladding initStep
+1     30.1     30.9    -9.28         0    0.142     0.14      0.14    Cladding eIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = gamma,   Track ID = 5,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8      1.76        0        0         0    Cladding initStep
+1     99.7    -8.07    -62.8      1.76        0      109       109       World Transportation
+2      500    -62.5     -283      1.76        0      460       569  OutOfWorld Transportation
+*********************************************************************************************************
+* G4Track Information:   Particle = Mg25,   Track ID = 4,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8      1.69        0        0         0    Cladding initStep
+1     5.01      4.8    -10.8         0     1.69  0.00131   0.00131    Cladding ionIoni
+2     5.01      4.8    -10.8         0        0        0   0.00131    Cladding RadioactiveDecay
+*********************************************************************************************************
+* G4Track Information:   Particle = alpha,   Track ID = 3,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0     5.01     4.81    -10.8      2.86        0        0         0    Cladding initStep
+1        5     4.81    -10.8         0     2.86     0.01      0.01    Cladding ionIoni
+*********************************************************************************************************
+* G4Track Information:   Particle = Si28,   Track ID = 2,   Parent ID = 1
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0     33.9        0     0.054        0        0         0    Cladding initStep
+1 -2.5e-05     33.9  5.4e-05         0    0.054 0.000296  0.000296    Cladding ionIoni
+2 -2.5e-05     33.9  5.4e-05         0        0        0  0.000296    Cladding RadioactiveDecay
+Number of Cerenkov photons produced in this event : 0
+*********************************************************************************************************
+* G4Track Information:   Particle = neutron,   Track ID = 1,   Parent ID = 0
+*********************************************************************************************************
+Step#    X(mm)    Y(mm)    Z(mm) KinE(MeV)  dE(MeV) StepLeng TrackLeng  NextVolume ProcName
+0        0      110        0        10        0        0         0       World initStep
+1        0      100        0        10        0       10        10    Cladding Transportation
+2        0        5        0        10        0       95       105   QuartzRod Transportation
+3        0       -5        0        10        0       10       115    Cladding Transportation
+4        0     -100        0        10        0       95       210       World Transportation
+5        0     -500        0        10        0      400       610  OutOfWorld Transportation
+Number of Cerenkov photons produced in this event : 0
+WARNING: 10 events have been kept for refreshing and/or reviewing.
+"/vis/reviewKeptEvents" to review them one by one.
+  "/vis/enable", then "/vis/viewer/flush" or "/vis/viewer/rebuild" to see them accumulated.

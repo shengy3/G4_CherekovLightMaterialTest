@@ -53,7 +53,7 @@ class PhysicsList : public G4VModularPhysicsList
 public:
   PhysicsList();
   ~PhysicsList();
-  //void ConstructOp();
+  void ConstructOp();
   //for the Messenger
   //void SetVerbose(G4int);
   //void SetNbOfPhotonsCerenkov(G4int);
@@ -61,7 +61,7 @@ public:
 public:
   virtual void ConstructParticle();
   virtual void SetCuts();
-/*
+
   static G4ThreadLocal G4int fVerboseLevel;
   static G4ThreadLocal G4int fMaxNumPhotonStep;
   static G4ThreadLocal G4Cerenkov *fCerenkovProcess;
@@ -70,7 +70,7 @@ public:
   static G4ThreadLocal G4OpRayleigh *fRayleighScatteringProcess;
   static G4ThreadLocal G4OpMieHG *fMieHGScatteringProcess;
   static G4ThreadLocal G4OpBoundaryProcess *fBoundaryProcess;
-   */
+
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
