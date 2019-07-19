@@ -23,73 +23,30 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file OpNovice/include/OpNovicePhysicsList.hh
-/// \brief Definition of the OpNovicePhysicsList class
+/// \file PhysicsList.hh
+/// \brief Definition of the PhysicsList class
 //
 //
-//
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-#ifndef OpNovicePhysicsList_h
-#define OpNovicePhysicsList_h 1
+#ifndef PhysicsList_h
+#define PhysicsList_h 1
 
+#include "G4VModularPhysicsList.hh"
 #include "globals.hh"
-#include "G4VUserPhysicsList.hh"
-#include "G4VPhysicsConstructor.hh"
-
-class OpNovicePhysicsListMessenger;
-
-class G4Cerenkov;
-class G4Scintillation;
-class G4OpAbsorption;
-class G4OpRayleigh;
-class G4OpMieHG;
-class G4OpBoundaryProcess;
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class OpNovicePhysicsList : public G4VUserPhysicsList
+class PhysicsList: public G4VModularPhysicsList
 {
-  public:
+public:
+  PhysicsList();
+ ~PhysicsList();
 
-    OpNovicePhysicsList();
-    virtual ~OpNovicePhysicsList();
-
-  public:
-
-    virtual void ConstructParticle();
-    virtual void ConstructProcess();
-
-    virtual void SetCuts();
-
-    //these methods Construct physics processes and register them
-    void ConstructDecay();
-    void ConstructEM();
-    void ConstructNeutron();
-    void ConstructOp();
-    void addHadronic();
-    void ConstructRadioactiveDecay();
-    //for the Messenger 
-    void SetVerbose(G4int);
-    void SetNbOfPhotonsCerenkov(G4int);
- 
-  private:
-
-    OpNovicePhysicsListMessenger* fMessenger;
-    G4VPhysicsConstructor*  fRaddecayList;
-
-    static G4ThreadLocal G4int fVerboseLevel;
-    static G4ThreadLocal G4int fMaxNumPhotonStep;
-    std::vector<G4VPhysicsConstructor*> hadronPhysics;
-    static G4ThreadLocal G4Cerenkov* fCerenkovProcess;
-    static G4ThreadLocal G4Scintillation* fScintillationProcess;
-    static G4ThreadLocal G4OpAbsorption* fAbsorptionProcess;
-    static G4ThreadLocal G4OpRayleigh* fRayleighScatteringProcess;
-    static G4ThreadLocal G4OpMieHG* fMieHGScatteringProcess;
-    static G4ThreadLocal G4OpBoundaryProcess* fBoundaryProcess;
+public:
+  virtual void ConstructParticle();
+  virtual void SetCuts();
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-#endif /* OpNovicePhysicsList_h */
+#endif

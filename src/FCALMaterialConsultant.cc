@@ -133,22 +133,16 @@ FCALMaterialConsultant::FCALMaterialConsultant()
 
   //Cd =  nist->FindOrBuildMaterial("G4_Cd");
 
-/* 
-  density = 2.7*g/cm3;
-  a = 26.98*g/mole;
-  Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
-*/
   density = 8.7*g/cm3;
   a = 112.411*g/mole;
   Cd = new G4Material(name="Cd",z=48.,a,density);
 
 
+  density = 2.32*g/cm3;
+  a = 28.085*g/mole;
+  Silicon = new G4Material(name="Silicon",z=14.,a,density);
 
-/* 
-  density = 2.7*g/cm3;
-  a = 26.98*g/mole;
-  Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
-*/
+
 
   density = 2.7*g/cm3;
   a = 26.98*g/mole;
@@ -327,6 +321,8 @@ G4Material * FCALMaterialConsultant::Material(G4String what)
   if(what == "RhoaCell")          material = RhoaCell;
   if(what == "Water")             material = Water;
   if(what == "Quartz")            material = SiO2;
+  if(what == "Silicon")           material = Silicon;
+
   if(what == "Cd")                material = Cd;
 
   return material;
