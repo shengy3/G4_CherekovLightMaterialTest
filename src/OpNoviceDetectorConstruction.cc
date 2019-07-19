@@ -126,10 +126,10 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
 // The cladding shell
 
-  G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 2*cm, 45.0*cm, 0*deg, 360*deg);
+  G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 10*cm, 45.0*cm, 0*deg, 360*deg);
 
   G4LogicalVolume* cladding_log
-    = new G4LogicalVolume(cladding,quartz,"Cladding",0,0,0);
+    = new G4LogicalVolume(cladding,silicon,"Cladding",0,0,0);
 
   G4VPhysicalVolume* cladding_phys
     = new G4PVPlacement(0,G4ThreeVector(),cladding_log,"Cladding",

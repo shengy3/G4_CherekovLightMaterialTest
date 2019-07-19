@@ -137,12 +137,14 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   a = 112.411*g/mole;
   Cd = new G4Material(name="Cd",z=48.,a,density);
 
-
+  Silicon =  nist->FindOrBuildMaterial("G4_Si");
+  /*
   density = 2.32*g/cm3;
   a = 28.085*g/mole;
   Silicon = new G4Material(name="Silicon",z=14.,a,density);
 
 
+   */
 
   density = 2.7*g/cm3;
   a = 26.98*g/mole;
