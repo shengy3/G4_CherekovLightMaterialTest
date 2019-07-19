@@ -1,4 +1,3 @@
-
 //
 // ********************************************************************
 // * License and Disclaimer                                           *
@@ -59,8 +58,6 @@
 #include "G4LossTableManager.hh"
 #include "G4EmSaturation.hh"
 
-#include "G4RadioactiveDecayPhysics.hh"
-
 G4ThreadLocal G4int OpNovicePhysicsList::fVerboseLevel = 1;
 G4ThreadLocal G4int OpNovicePhysicsList::fMaxNumPhotonStep = 300;
 G4ThreadLocal G4Cerenkov *OpNovicePhysicsList::fCerenkovProcess = 0;
@@ -76,14 +73,11 @@ OpNovicePhysicsList::OpNovicePhysicsList()
     : G4VUserPhysicsList()
 {
   fMessenger = new OpNovicePhysicsListMessenger(this);
-   fRaddecayList = new G4RadioactiveDecayPhysics();
-
-
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-OpNovicePhysicsList::~OpNovicePhysicsList() { delete fRaddecayList; delete fMessenger; }
+OpNovicePhysicsList::~OpNovicePhysicsList() { delete fMessenger; }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -118,22 +112,17 @@ void OpNovicePhysicsList::ConstructProcess()
   ConstructDecay();
   ConstructEM();
   ConstructOp();
-  fRaddecayList->ConstructProcess();
-
-
   addHadronic();
   for (unsigned int i = 0; i < hadronPhysics.size(); i++)
     hadronPhysics[i]->ConstructProcess();
- 
 }
-
- 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #include "G4Decay.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
 void OpNovicePhysicsList::ConstructDecay()
 {
   // Add Decay Process
@@ -153,8 +142,6 @@ void OpNovicePhysicsList::ConstructDecay()
     }
   }
 }
-
- 
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 #include "G4VModularPhysicsList.hh"
@@ -236,14 +223,12 @@ void OpNovicePhysicsList::ConstructEM()
     }
   }
 }
- 
-
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 #include "G4HadronElasticPhysics.hh"
 #include "G4VModularPhysicsList.hh"
 #include "G4HadronInelasticQBBC.hh"
-#include "G4HadronPhysicsFTFP_BERT_HP.hh"
+#include "G4HadronPhysicsFTFP_BERT.hh"
 #include "G4NeutronTrackingCut.hh"
 #include "G4StoppingPhysics.hh"
 #include "G4EmExtraPhysics.hh"
@@ -252,10 +237,10 @@ void OpNovicePhysicsList::ConstructEM()
 
 void OpNovicePhysicsList::addHadronic(void)
 {
-  hadronPhysics.push_back(new G4HadronPhysicsFTFP_BERT_HP(verboseLevel));
+  hadronPhysics.push_back(new G4HadronPhysicsFTFP_BERT(verboseLevel));
   G4NeutronTrackingCut *input = new G4NeutronTrackingCut(verboseLevel);
-  input->SetKineticEnergyLimit(0.00001* CLHEP::eV);
-  input->SetTimeLimit(300 * CLHEP::s);
+  input->SetKineticEnergyLimit(0.0001* CLHEP::eV);
+  input->SetTimeLimit(0.1 * CLHEP::ms);
   hadronPhysics.push_back(input);
   hadronPhysics.push_back(new G4StoppingPhysics(verboseLevel));
   hadronPhysics.push_back(new G4EmExtraPhysics(verboseLevel));
@@ -360,5 +345,3 @@ void OpNovicePhysicsList::SetCuts()
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-
