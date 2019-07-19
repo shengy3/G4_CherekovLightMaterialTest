@@ -149,6 +149,8 @@ FCALMaterialConsultant::FCALMaterialConsultant()
   a = 26.98*g/mole;
   Aluminium = new G4Material(name="Aluminium",z=13.,a,density);
 */
+  Silicon    = nist->FindOrBuildMaterial("G4_Si");
+
 
   density = 2.7*g/cm3;
   a = 26.98*g/mole;
@@ -328,6 +330,8 @@ G4Material * FCALMaterialConsultant::Material(G4String what)
   if(what == "Water")             material = Water;
   if(what == "Quartz")            material = SiO2;
   if(what == "Cd")                material = Cd;
+  if(what == "Silicon")           material = Silicon;
+
 
   return material;
 }

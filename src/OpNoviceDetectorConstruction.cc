@@ -83,6 +83,8 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
   G4Material* water = FCALMaterials->Material("Water");
   G4Material* copper = FCALMaterials->Material("Copper");
   G4Material* Cd = FCALMaterials->Material("Cd");
+  G4Material* silicon = FCALMaterials->Material("Silicon");
+
 
 
 
@@ -141,10 +143,10 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
    */
 //
 
-  G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 2*cm, 45.0*cm, 0*deg, 360*deg);
+  G4Tubs* cladding = new G4Tubs("aTubeSolid", 0*cm, 10*cm, 45.0*cm, 0*deg, 360*deg);
 
   G4LogicalVolume* cladding_log
-    = new G4LogicalVolume(cladding,quartz,"Cladding",0,0,0);
+    = new G4LogicalVolume(cladding,silicon,"Cladding",0,0,0);
 
   G4VPhysicalVolume* cladding_phys
     = new G4PVPlacement(0,G4ThreeVector(),cladding_log,"Cladding",
@@ -155,7 +157,7 @@ G4VPhysicalVolume* OpNoviceDetectorConstruction::Construct()
 
   G4Tubs* quartz_rod = new G4Tubs("aTubeSolid", 0*cm, 0.5*cm, 40.0*cm, 0*deg, 360*deg);
   G4LogicalVolume* quartz_rod_log
-    = new G4LogicalVolume(quartz_rod,quartz,"Rod",0,0,0);
+    = new G4LogicalVolume(quartz_rod,silicon,"Rod",0,0,0);
 
   G4VPhysicalVolume* quartz_rod_phys
     = new G4PVPlacement(0,G4ThreeVector(),quartz_rod_log,"QuartzRod",

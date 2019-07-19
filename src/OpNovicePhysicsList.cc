@@ -58,6 +58,8 @@
 #include "G4LossTableManager.hh"
 #include "G4EmSaturation.hh"
 
+#include "G4RadioactiveDecayPhysics.hh"
+
 G4ThreadLocal G4int OpNovicePhysicsList::fVerboseLevel = 1;
 G4ThreadLocal G4int OpNovicePhysicsList::fMaxNumPhotonStep = 300;
 G4ThreadLocal G4Cerenkov *OpNovicePhysicsList::fCerenkovProcess = 0;
@@ -115,6 +117,8 @@ void OpNovicePhysicsList::ConstructProcess()
   addHadronic();
   for (unsigned int i = 0; i < hadronPhysics.size(); i++)
     hadronPhysics[i]->ConstructProcess();
+  G4RadioactiveDecayPhysics* decay =  new G4RadioactiveDecayPhysics(); 
+  decay->ConstructProcess();
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -225,10 +229,10 @@ void OpNovicePhysicsList::ConstructEM()
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-#include "G4HadronElasticPhysics.hh"
+#include "G4HadronElasticPhysicsHP.hh"
 #include "G4VModularPhysicsList.hh"
 #include "G4HadronInelasticQBBC.hh"
-#include "G4HadronPhysicsFTFP_BERT.hh"
+#include "G4HadronPhysicsFTFP_BERT_HP.hh"
 #include "G4NeutronTrackingCut.hh"
 #include "G4StoppingPhysics.hh"
 #include "G4EmExtraPhysics.hh"
@@ -244,7 +248,7 @@ void OpNovicePhysicsList::addHadronic(void)
   hadronPhysics.push_back(input);
   hadronPhysics.push_back(new G4StoppingPhysics(verboseLevel));
   hadronPhysics.push_back(new G4EmExtraPhysics(verboseLevel));
-  hadronPhysics.push_back(new G4HadronElasticPhysics(verboseLevel));
+  hadronPhysics.push_back(new G4HadronElasticPhysicsHP(verboseLevel));
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

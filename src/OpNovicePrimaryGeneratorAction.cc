@@ -61,7 +61,7 @@ OpNovicePrimaryGeneratorAction::OpNovicePrimaryGeneratorAction()
 
   fParticleGun->SetParticleDefinition(particle);
   fParticleGun->SetParticleTime(0.0*ns);
-  fParticleGun->SetParticlePosition(G4ThreeVector(0.0*cm,5.0*cm,0.0*cm));
+  fParticleGun->SetParticlePosition(G4ThreeVector(0.0*cm,11.0*cm,0.0*cm));
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,-1.,0.));
   fParticleGun->SetParticleEnergy(10*keV);
 }
