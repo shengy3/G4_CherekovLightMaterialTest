@@ -23,37 +23,61 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file PhysicsList.hh
-/// \brief Definition of the PhysicsList class
+/// \file HadronElasticPhysicsHP.hh
+/// \brief Definition of the HadronElasticPhysicsHP class
 //
 //
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-#ifndef PhysicsList_h
-#define PhysicsList_h 1
+//
+// HP models for neutron < 20 MeV
 
-#include "G4VModularPhysicsList.hh"
-#include "globals.hh"
+#include "HadronElasticPhysicsHP.hh"
 
+//#include "NeutronHPMessenger.hh"
 
+#include "G4HadronicProcess.hh"
+#include "G4ParticleHPElastic.hh"
+#include "G4ParticleHPElasticData.hh"
+#include "G4ParticleHPThermalScattering.hh"
+#include "G4ParticleHPThermalScatteringData.hh"
+
+#include "G4SystemOfUnits.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class PhysicsList : public G4VModularPhysicsList
+HadronElasticPhysicsHP::HadronElasticPhysicsHP(G4int ver)
+: G4HadronElasticPhysics(ver),
+  fThermal(false) //fNeutronMessenger(0)  
 {
-public:
-  PhysicsList();
-  ~PhysicsList();
-  
-  //for the Messenger
-  //void SetVerbose(G4int);
-  //void SetNbOfPhotonsCerenkov(G4int);
-
-public:
-  virtual void ConstructParticle();
-  virtual void SetCuts();
-
-};
+  //fNeutronMessenger   = new NeutronHPMessenger(this);  
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-#endif
+HadronElasticPhysicsHP::~HadronElasticPhysicsHP()
+{
+  //delete fNeutronMessenger;  
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void HadronElasticPhysicsHP::ConstructProcess()
+{
+  G4HadronElasticPhysics::ConstructProcess();
+  GetNeutronModel()->SetMinEnergy(19.5*MeV);
+
+  G4HadronicProcess* process = GetNeutronProcess();
+  G4ParticleHPElastic* model1 = new G4ParticleHPElastic();
+  process->RegisterMe(model1);
+  process->AddDataSet(new G4ParticleHPElasticData());
+
+  
+  model1->SetMinEnergy(0.0001*eV);
+  G4ParticleHPThermalScattering* model2 = new G4ParticleHPThermalScattering();
+  process->RegisterMe(model2);
+  process->AddDataSet(new G4ParticleHPThermalScatteringData());  
+
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

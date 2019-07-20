@@ -41,15 +41,25 @@
 #include "G4NuclideTable.hh"
 #include "G4RadioactiveDecayPhysics.hh"
 
-#include "G4HadronElasticPhysicsHP.hh"
+//#include "G4HadronElasticPhysicsHP.hh"
+
+#include "HadronElasticPhysicsHP.hh"
 #include "G4HadronPhysicsFTFP_BERT_HP.hh"
 #include "G4HadronPhysicsQGSP_BIC_HP.hh"
 #include "G4HadronInelasticQBBC.hh"
 #include "G4HadronPhysicsINCLXX.hh"
 #include "G4IonElasticPhysics.hh"
-#include "G4IonPhysics.hh"
+#include "G4IonPhysicsXS.hh"
 #include "G4IonINCLXXPhysics.hh"
+#include "G4StoppingPhysics.hh"
+#include "GammaNuclearPhysics.hh"
+
+//#include "G4EmStandardPhysics.hh"
+#include "G4EmStandardPhysics_option4.hh"
+#include "G4DecayPhysics.hh"
+#include "G4RadioactiveDecayPhysics.hh"
 #include "G4OpticalPhysics.hh"
+
 // particles
 
 #include "G4BosonConstructor.hh"
@@ -87,40 +97,46 @@ PhysicsList::PhysicsList()
   G4NuclideTable::GetInstance()->SetThresholdOfHalfLife(0.1 * picosecond);
   G4NuclideTable::GetInstance()->SetLevelTolerance(1.0 * eV);
 
-  // EM physics
-  RegisterPhysics(new G4EmStandardPhysics());
-  G4EmParameters *param = G4EmParameters::Instance();
-  param->SetAugerCascade(true);
-  param->SetStepFunction(1., 1 * CLHEP::mm);
-  param->SetStepFunctionMuHad(1., 1 * CLHEP::mm);
+  //Modified G4 Hadron Elastic scattering: add thermal scattering
+  RegisterPhysics( new HadronElasticPhysicsHP(verb) );
+  
+  // Hadron Inelastic Physics
+  RegisterPhysics( new G4HadronPhysicsFTFP_BERT_HP(verb));
+  ////RegisterPhysics( new G4HadronPhysicsQGSP_BIC_HP(verb));
+  ////RegisterPhysics( new G4HadronInelasticQBBC(verb));        
+  ////RegisterPhysics( new G4HadronPhysicsINCLXX(verb));
 
+  // Ion Elastic scattering
+  RegisterPhysics( new G4IonElasticPhysics(verb));
+
+  // Ion Inelastic Physics
+  RegisterPhysics( new G4IonPhysicsXS(verb));
+  ////RegisterPhysics( new G4IonINCLXXPhysics(verb));
+  
+  // stopping Particles
+  RegisterPhysics( new G4StoppingPhysics(verb));
+      
+  // Gamma-Nuclear Physics
+  RegisterPhysics( new GammaNuclearPhysics("gamma"));
+
+ 
   // Decay
   RegisterPhysics(new G4DecayPhysics());
 
   // Radioactive decay
   RegisterPhysics(new G4RadioactiveDecayPhysics());
 
-  // Hadron Elastic scattering
-  RegisterPhysics(new G4HadronElasticPhysicsHP(verb));
+  // EM physics
+  /*
+  emstandard_opt4 new physics constructor was designed for any applications required higher accuracy of electrons, hadrons and ion tracking. Use the most accurate standard and low-energy models. It is used in extended electromagnetic examples and in the QGSP_BIC_EMZ reference Physics List. The corresponding physics constructor includes following modifications with the G4EmStandardPhysics_option3.cc:
+  
+  G4KleinNishinaModel is used above 20 MeV, G4LowEPComptonModel is used below for the Compton scattering simulation. Both models provide simulation of Doppler broading and atomic deexcitation.
+  G4PenelopeGammaConversion model is used for gamma conversion below 1 GeV;
+  the parameter RangeFactor for multiple scattering of e+, e- is set to 0.01 (the default 0.04);
+  for e+ and e- G4GoudsmithSaundersonModel is used below 100 MeV with step limitation UseSafetyPlus and skin=3 - the most accurate algorithm with single scattering in vicinity of a geometry boundary.
+  */
+  RegisterPhysics(new G4EmStandardPhysics_option4());
 
-  // Hadron Inelastic physics
-  RegisterPhysics(new G4HadronPhysicsFTFP_BERT_HP(verb));
-  ////RegisterPhysics( new G4HadronPhysicsQGSP_BIC_HP(verb));
-  ////RegisterPhysics( new G4HadronInelasticQBBC(verb));
-  ////RegisterPhysics( new G4HadronPhysicsINCLXX(verb));
-
-  // Ion Elastic scattering
-  RegisterPhysics(new G4IonElasticPhysics(verb));
-
-  // Ion Inelastic physics
-  RegisterPhysics(new G4IonPhysics(verb));
-  ////RegisterPhysics( new G4IonINCLXXPhysics(verb));
-
-  // Gamma-Nuclear Physics
-  G4EmExtraPhysics *gnuc = new G4EmExtraPhysics(verb);
-  gnuc->ElectroNuclear(false);
-  gnuc->MuonNuclear(false);
-  RegisterPhysics(gnuc);
 
   //Optical photon Physics
   
@@ -167,7 +183,3 @@ void PhysicsList::SetCuts()
   SetCutValue(10 * km, "e+");
   SetCutValue(10 * km, "gamma");
 }
-
-//Optical photon Physics
-//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-

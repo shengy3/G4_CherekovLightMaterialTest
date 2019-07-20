@@ -23,37 +23,33 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file PhysicsList.hh
-/// \brief Definition of the PhysicsList class
+/// \file GammaNuclearPhysics.hh
+/// \brief Definition of the GammaNuclearPhysics class
 //
 //
-
-#ifndef PhysicsList_h
-#define PhysicsList_h 1
-
-#include "G4VModularPhysicsList.hh"
-#include "globals.hh"
-
-
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class PhysicsList : public G4VModularPhysicsList
+#ifndef GammaNuclearPhysics_h
+#define GammaNuclearPhysics_h 1
+
+#include "globals.hh"
+#include "G4VPhysicsConstructor.hh"
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+class GammaNuclearPhysics : public G4VPhysicsConstructor
 {
-public:
-  PhysicsList();
-  ~PhysicsList();
-  
-  //for the Messenger
-  //void SetVerbose(G4int);
-  //void SetNbOfPhotonsCerenkov(G4int);
+  public:
+    GammaNuclearPhysics(const G4String& name="gamma");
+   ~GammaNuclearPhysics();
 
-public:
-  virtual void ConstructParticle();
-  virtual void SetCuts();
-
+  public:
+    virtual void ConstructParticle() { };
+    virtual void ConstructProcess();
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif
+

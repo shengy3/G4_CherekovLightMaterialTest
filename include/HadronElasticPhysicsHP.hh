@@ -23,37 +23,41 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file PhysicsList.hh
-/// \brief Definition of the PhysicsList class
+/// \file HadronElasticPhysicsHP.hh
+/// \brief Definition of the HadronElasticPhysicsHP class
 //
 //
-
-#ifndef PhysicsList_h
-#define PhysicsList_h 1
-
-#include "G4VModularPhysicsList.hh"
-#include "globals.hh"
-
-
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class PhysicsList : public G4VModularPhysicsList
+#ifndef HadronElasticPhysicsHP_h
+#define HadronElasticPhysicsHP_h 1
+
+#include "globals.hh"
+#include "G4HadronElasticPhysics.hh"
+
+//class NeutronHPMessenger;
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+class HadronElasticPhysicsHP : public G4HadronElasticPhysics
 {
-public:
-  PhysicsList();
-  ~PhysicsList();
-  
-  //for the Messenger
-  //void SetVerbose(G4int);
-  //void SetNbOfPhotonsCerenkov(G4int);
+  public: 
+    HadronElasticPhysicsHP(G4int ver = 1); 
+   ~HadronElasticPhysicsHP();
 
-public:
-  virtual void ConstructParticle();
-  virtual void SetCuts();
-
+  public: 
+    virtual void ConstructProcess();
+    
+  public:
+    void SetThermalPhysics(G4bool flag) {fThermal = flag;};
+      
+  private:
+    G4bool                  fThermal;
+    //NeutronHPMessenger*     fNeutronMessenger;          
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif
+

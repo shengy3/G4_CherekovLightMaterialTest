@@ -10,7 +10,7 @@
 
 /control/verbose 0
 /run/verbose 0
-/tracking/verbose 1
+/tracking/verbose 0
 /run/particle/verbose 0
 
 
@@ -47,9 +47,9 @@
 #if using these commands in interactive mode to visualize, use this to allow more events to be displayed (do not use in batch mode)
 #/vis/ogl/set/displayListLimit 1000000
 
-/vis/filtering/trajectories/create/particleFilter
-/vis/filtering/trajectories/particleFilter-0/add opticalphoton
-/vis/filtering/trajectories/particleFilter-0/add e-
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add opticalphoton
+#/vis/filtering/trajectories/particleFilter-0/add e-
 
 ##############################################################
 ##############################################################

@@ -23,37 +23,49 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file PhysicsList.hh
-/// \brief Definition of the PhysicsList class
+/// \file GammaNuclearPhysics.cc
+/// \brief Implementation of the GammaNuclearPhysics class
 //
 //
-
-#ifndef PhysicsList_h
-#define PhysicsList_h 1
-
-#include "G4VModularPhysicsList.hh"
-#include "globals.hh"
-
-
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-class PhysicsList : public G4VModularPhysicsList
+#include "GammaNuclearPhysics.hh"
+
+#include "G4ParticleDefinition.hh"
+#include "G4ProcessManager.hh"
+
+// Processes
+
+#include "G4PhotoNuclearProcess.hh"
+#include "G4CascadeInterface.hh"
+
+#include "G4SystemOfUnits.hh"
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+GammaNuclearPhysics::GammaNuclearPhysics(const G4String& name)
+:  G4VPhysicsConstructor(name)
+{ }
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+GammaNuclearPhysics::~GammaNuclearPhysics()
+{ }
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void GammaNuclearPhysics::ConstructProcess()
 {
-public:
-  PhysicsList();
-  ~PhysicsList();
-  
-  //for the Messenger
-  //void SetVerbose(G4int);
-  //void SetNbOfPhotonsCerenkov(G4int);
-
-public:
-  virtual void ConstructParticle();
-  virtual void SetCuts();
-
-};
+   G4ProcessManager* pManager = G4Gamma::Gamma()->GetProcessManager();
+   //
+   G4PhotoNuclearProcess* process = new G4PhotoNuclearProcess();
+   //
+   G4CascadeInterface* bertini = new G4CascadeInterface();
+   bertini->SetMaxEnergy(10*GeV);
+   process->RegisterMe(bertini);
+   //
+   pManager->AddDiscreteProcess(process);
+}
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
-
-#endif
